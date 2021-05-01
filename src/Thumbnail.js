@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './App.css';
- 
+
 function Thumbnail(props) {
   return (
     <div className="project">
@@ -15,5 +15,5 @@ function Thumbnail(props) {
     </div>
   );
 }
- 
+
 export default Thumbnail;

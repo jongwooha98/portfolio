@@ -19,15 +19,21 @@ function App() {
           <img src={logo} className="logo" alt="Logo Image" />
           <div className="navigation-sub">
             <button type="button" class="btn btn-outline-primary">
-              <Link to="/" className="item">Projects</Link>
+              <Link to="/" className="item">
+                Projects
+              </Link>
             </button>
-            <Link to="/articles" className="item">Articles</Link>
-            <Link to="/about" className="item">About</Link>
+            <Link to="/articles" className="item">
+              Articles
+            </Link>
+            <Link to="/about" className="item">
+              About
+            </Link>
           </div>
         </div>
       </div>
-  </BrowserRouter>
+    </BrowserRouter>
   );
 }
- 
+
 export default App;

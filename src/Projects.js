@@ -1,9 +1,9 @@
 import React from 'react';
-import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
+import Thumbnail from './Thumbnail.js';
 import './App.css';
 
 function Projects(props) {
-  return(
+  return (
     <div>
       <h1>Projects</h1>
       <Thumbnail
@@ -12,14 +12,14 @@ function Projects(props) {
         title="Twitter Newsfeed"
         category="Mobile App"
       />
-      
+
       <Thumbnail
         link="/airbnb"
         image="http://airbnb-image-url.jpg>"
         title="Airbnb Experiences"
         category="Website"
       />
-      
+
       <Thumbnail
         link="/photoshop"
         image="http://photoshop-image-url.jpg"
@@ -27,7 +27,7 @@ function Projects(props) {
         category="Desktop App"
       />
     </div>
-  )
+  );
 }
 
 export default Projects;
