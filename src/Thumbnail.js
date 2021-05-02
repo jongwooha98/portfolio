@@ -1,16 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import './App.css';
+import { Link } from 'react-router-dom';
+import './Home.css';
 
 function Thumbnail(props) {
+  const { link, image, title, category } = props;
+
   return (
     <div className="project">
-      <Link to={props.link}>
+      <Link to={link}>
         <div className="project-image">
-          <img src={props.iamge} alt="Project Image"/>
+          <img src={image} alt="Project" />
         </div>
-        <div className="project-title">{props.title}</div>
-        <div className="project-category">{props.category}</div>
+        <div className="project-title">{title}</div>
+        <div className="project-category">{category}</div>
       </Link>
     </div>
   );

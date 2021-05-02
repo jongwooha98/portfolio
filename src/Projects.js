@@ -1,8 +1,8 @@
 import React from 'react';
 import Thumbnail from './Thumbnail.js';
-import './App.css';
+import './Home.css';
 
-function Projects(props) {
+function Projects() {
   return (
     <div>
       <h1>Projects</h1>
