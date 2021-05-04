@@ -1,11 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar.js';
 import Home from './components/pages/Home.js';
 import Projects from './components/pages/Projects.js';
 import Contact from './components/pages/Contact.js';
+import PageNotFound from './components/pages/PageNotFound.js';
+import Footer from './components/Footer.js';
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -16,7 +18,10 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
+          <Route component={PageNotFound} />
         </Switch>
+
+        <Footer />
       </Router>
     </>
   );

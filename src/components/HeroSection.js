@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button.js';
-import '../App.css';
+import '../App.scss';
 import './HeroSection.scss';
 import video2 from '../assets/videos/video-2.mp4';
 
@@ -12,22 +12,23 @@ function HeroSection() {
         <p>Your browser cannot play the provided video file.</p>
       </video>
 
-      <h1>ADVENTURE AWAITS</h1>
-      <p>what are you waiting for?</p>
+      <h1>JONGWOO HA</h1>
+      <p>Front End Developer</p>
       <div className="hero-btns">
         <Button
+          linkTo="/contact"
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
-          GET STARTED
+          CONTACT
         </Button>
         <Button
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
         >
-          WATCH TRAILER <i className="far fa-play-circle" />
+          DOWNLOAD RESUME <i className="far fa-file-pdf" />
         </Button>
       </div>
     </div>
