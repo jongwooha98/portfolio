@@ -11,19 +11,17 @@ import './App.scss';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
-          <Route component={PageNotFound} />
-        </Switch>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/contact" component={Contact} />
+        <Route component={PageNotFound} />
+      </Switch>
 
-        <Footer />
-      </Router>
-    </>
+      <Footer />
+    </Router>
   );
 }
 

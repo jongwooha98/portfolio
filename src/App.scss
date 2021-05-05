@@ -8,6 +8,40 @@ html {
   font-family: 'PT Sans', sans-serif;
 }
 
+.about {
+  background-color: #fff;
+  font-size: 1.6rem;
+  padding: 3rem 0 0 0;
+  > h1 {
+    font-size: 2.4rem;
+  }
+  > h2 {
+    font-size: 2rem;
+  }
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about__education,
+.about__experience {
+  /*position*/
+
+  /* display & box */
+  box-sizing: border-box;
+  padding: 5rem;
+  margin-top: 3rem;
+  border-radius: 2rem;
+
+  /* color */
+
+  /*text*/
+}
+
 .projects {
   display: flex;
   height: 30rem;

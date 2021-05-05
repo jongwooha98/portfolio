@@ -27,59 +27,53 @@ function Navbar() {
   window.addEventListener('resize', showButton);
 
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            JWH <i className="fas fa-circle-notch " />
-          </Link>
-          <div
-            role="button"
-            tabIndex="0"
-            className="menu-icon"
-            onClick={handleClick}
-            onKeyDown={handleClick}
-          >
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className="nav-item">
-              <Link to="/" className="nav-link" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link" onClick={closeMobileMenu}>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/projects"
-                className="nav-link"
-                onClick={closeMobileMenu}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/contact"
-                className="nav-link-mobile"
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-          {button && (
-            <Button linkTo="./contact" buttonStyle="btn--outline">
-              Contact
-            </Button>
-          )}
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          JWH <i className="fas fa-circle-notch " />
+        </Link>
+        <div
+          role="button"
+          tabIndex="0"
+          className="menu-icon"
+          onClick={handleClick}
+          onKeyDown={handleClick}
+        >
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
-      </nav>
-    </>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className="nav-item">
+            <Link to="/" className="nav-link" onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="nav-link" onClick={closeMobileMenu}>
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/projects" className="nav-link" onClick={closeMobileMenu}>
+              Projects
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/contact"
+              className="nav-link-mobile"
+              onClick={closeMobileMenu}
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+        {button && (
+          <Button linkTo="./contact" buttonStyle="btn--outline">
+            Contact
+          </Button>
+        )}
+      </div>
+    </nav>
   );
 }
 

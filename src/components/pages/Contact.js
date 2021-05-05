@@ -4,7 +4,7 @@ import { Button } from '../Button.js';
 
 export default function Contact() {
   return (
-    <h1 className="contact">
+    <div className="contact">
       <div className="section footer-subscription">
         <p className="footer-subscription-heading">Contact me via email</p>
         <p className="footer-subscription-text">Email text placeholder</p>
@@ -22,6 +22,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </h1>
+    </div>
   );
 }
