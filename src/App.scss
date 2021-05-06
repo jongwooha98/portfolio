@@ -5,7 +5,6 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
 }
 
 .about {
@@ -27,8 +26,7 @@ html {
   margin: 0 auto;
 }
 
-.about__education,
-.about__experience {
+.about__education {
   /*position*/
 
   /* display & box */
@@ -40,6 +38,16 @@ html {
   /* color */
 
   /*text*/
+}
+.experience {
+  .experience__logo img {
+    width: 5rem;
+    height: 5rem;
+    border: 50%;
+  }
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 .projects {
