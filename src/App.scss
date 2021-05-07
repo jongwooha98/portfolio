@@ -1,3 +1,9 @@
+$font-xsmall: 1.6rem;
+$font-small: 1.8rem;
+$font-medium: 2.4rem;
+$font-large: 3.2rem;
+$font-xlarge: 4.8rem;
+
 html {
   font-size: 10px;
 }
@@ -9,13 +15,13 @@ html {
 
 .about {
   background-color: #fff;
-  font-size: 1.6rem;
+  font-size: $font-small;
   padding: 3rem 0 0 0;
   > h1 {
-    font-size: 2.4rem;
+    font-size: $font-large;
   }
   > h2 {
-    font-size: 2rem;
+    font-size: $font-medium;
   }
 }
 .about-container {
@@ -39,14 +45,91 @@ html {
 
   /*text*/
 }
+
+/* Education Section */
+.education-section {
+  h2 {
+    font-size: $font-xlarge;
+    margin: 0 0 2.4rem 3.2rem;
+    text-align: left;
+  }
+}
+/* Education Component */
+.education {
+  margin: 0 0 2.4rem 0;
+  .education__logo img {
+    width: 5rem;
+    height: 5rem;
+    border: 50%;
+    margin: 1rem 1.6rem 0 0;
+  }
+  .education__school {
+    a {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: auto;
+    }
+    h3 {
+      font-size: $font-large;
+    }
+  }
+  .education__degree {
+    h4 {
+      font-size: $font-small;
+    }
+  }
+  .education__duration {
+    font-size: $font-xsmall;
+  }
+  .education__location {
+    color: #4a4b46;
+    font-size: $font-xsmall;
+  }
+  .education__description {
+    margin: 1rem 0 0 0;
+  }
+}
+
+/* Experience Section */
+.experience-section {
+  h2 {
+    font-size: $font-xlarge;
+    margin: 0 0 2.4rem 3.2rem;
+    text-align: left;
+  }
+}
+
+/* Experience Component */
 .experience {
+  margin: 0 0 2.4rem 0;
   .experience__logo img {
     width: 5rem;
     height: 5rem;
     border: 50%;
+    margin: 1rem 1.6rem 0 0;
   }
   h3 {
-    font-size: 3rem;
+    font-size: $font-large;
+  }
+  .experience__organization {
+    a {
+      text-decoration: inherit;
+      color: inherit;
+      cursor: auto;
+    }
+    h4 {
+      font-size: $font-small;
+    }
+  }
+  .experience__duration {
+    font-size: $font-xsmall;
+  }
+  .experience__location {
+    color: #4a4b46;
+    font-size: $font-xsmall;
+  }
+  .experience__description {
+    margin: 1rem 0 0 0;
   }
 }
 

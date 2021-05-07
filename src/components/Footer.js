@@ -11,7 +11,7 @@ function Footer() {
             <h2>About</h2>
             <p>
               Handcrafted with <br />
-              React and Sass
+              React and Bootstrap
             </p>
           </div>
           <div className="footer-link-items">
