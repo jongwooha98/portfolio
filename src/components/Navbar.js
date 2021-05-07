@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.scss';
 import { Button } from './Button.js';
+
+import './Navbar.scss';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -13,7 +14,7 @@ function Navbar() {
   // nav button appears when window width <= 960,
   // then dissapears when the width is larger than that
   const showButton = () => {
-    if (window.indderWidth <= 960) {
+    if (window.innerWidth <= 960) {
       setButton(false);
     } else {
       setButton(true);
@@ -34,9 +35,9 @@ function Navbar() {
         </Link>
         <div
           role="button"
-          tabIndex="0"
           className="menu-icon"
           onClick={handleClick}
+          tabIndex="0"
           onKeyDown={handleClick}
         >
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
