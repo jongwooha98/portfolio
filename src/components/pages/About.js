@@ -87,6 +87,7 @@ function Experience(props) {
             </ul>
           </div>
         </div>
+        <hr style="width: 100%;" />
       </div>
     </div>
   );
