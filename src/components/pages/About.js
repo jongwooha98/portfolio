@@ -21,9 +21,9 @@ function Education(props) {
       <div className="flex-wrap">
         <div>
           <div className="education__school">
-            <a href={url}>
-              <h3>{school}</h3>
-            </a>
+            {/* <a href={url}> */}
+            <h3>{school}</h3>
+            {/* </a> */}
           </div>
           <div className="education__degree">
             <h4>{degree}</h4>
@@ -70,9 +70,9 @@ function Experience(props) {
             <h3>{title}</h3>
           </div>
           <div className="experience__organization">
-            <a href={url}>
-              <h4>{organization}</h4>
-            </a>
+            {/* <a href={url}> */}
+            <h4>{organization}</h4>
+            {/* </a> */}
           </div>
         </div>
         <div>
@@ -86,7 +86,7 @@ function Experience(props) {
             </ul>
           </div>
         </div>
-        <hr />
+        {/* <hr /> */}
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 1120px;
-  width: 90%;
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -54,7 +54,7 @@ body {
 
 /* Education Section */
 .education-section {
-  background-color: ivory;
+  // background-color: ivory;
 
   h2 {
     font-size: $font-xlarge;
@@ -65,6 +65,11 @@ body {
 /* Education Component */
 .education {
   margin: 0 0 2.4rem 0;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
+
   .education__logo img {
     width: 5rem;
     height: 5rem;
@@ -95,13 +100,15 @@ body {
   }
   .education__description {
     margin: 1rem 0 0 0;
-    background-color: lightcoral;
   }
 }
 
+.education:hover {
+  transform: scale(1.01);
+}
 /* Experience Section */
 .experience-section {
-  background-color: ivory;
+  // background-color: ivory;
 
   h2 {
     font-size: $font-xlarge;
@@ -114,7 +121,9 @@ body {
 
 .experience {
   margin: 0 0 2.4rem 0;
+  padding: 1rem;
   background-color: #fff;
+  border-radius: 2rem;
   box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
 
   .experience__logo img {
@@ -145,11 +154,11 @@ body {
   }
   .experience__description {
     margin: 1rem 0 0 0;
-    background-color: lightcoral;
+    // background-color: lightcoral;
   }
 }
 .experience:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 .projects {
   display: flex;
