@@ -4,19 +4,25 @@ $font-medium: 2.4rem;
 $font-large: 3.2rem;
 $font-xlarge: 4.8rem;
 
-html {
+html,
+body {
   font-size: 10px;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+// * {
+//   box-sizing: border-box;
+//   margin: 0;
+//   padding: 0;
+// }
 
 .about {
   background-color: #fff;
   font-size: $font-small;
   padding: 3rem 0 0 0;
+
   > h1 {
     font-size: $font-large;
   }
@@ -48,6 +54,8 @@ html {
 
 /* Education Section */
 .education-section {
+  background-color: ivory;
+
   h2 {
     font-size: $font-xlarge;
     margin: 0 0 2.4rem 3.2rem;
@@ -87,11 +95,14 @@ html {
   }
   .education__description {
     margin: 1rem 0 0 0;
+    background-color: lightcoral;
   }
 }
 
 /* Experience Section */
 .experience-section {
+  background-color: ivory;
+
   h2 {
     font-size: $font-xlarge;
     margin: 0 0 2.4rem 3.2rem;
@@ -100,8 +111,12 @@ html {
 }
 
 /* Experience Component */
+
 .experience {
   margin: 0 0 2.4rem 0;
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
+
   .experience__logo img {
     width: 5rem;
     height: 5rem;
@@ -130,9 +145,12 @@ html {
   }
   .experience__description {
     margin: 1rem 0 0 0;
+    background-color: lightcoral;
   }
 }
-
+.experience:hover {
+  transform: scale(1.03);
+}
 .projects {
   display: flex;
   height: 30rem;

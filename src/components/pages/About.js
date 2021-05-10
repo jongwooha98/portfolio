@@ -75,7 +75,6 @@ function Experience(props) {
             </a>
           </div>
         </div>
-
         <div>
           <div className="experience__duration">{duration}</div>
           <div className="experience__location">{location}</div>
@@ -87,7 +86,7 @@ function Experience(props) {
             </ul>
           </div>
         </div>
-        <hr style="width: 100%;" />
+        <hr />
       </div>
     </div>
   );
@@ -95,7 +94,7 @@ function Experience(props) {
 
 function About() {
   return (
-    <div className="about">
+    <div className="about container">
       <div className="about__intro">
         <h1>Hi, I&apos;m Jong</h1>
       </div>
