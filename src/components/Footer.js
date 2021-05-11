@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Footer.scss';
 
 function Footer() {
@@ -16,55 +15,58 @@ function Footer() {
           </div>
           <div className="footer-link-items">
             <h2>Explore</h2>
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/contact">Contact</Link>
+            <a href="#home-section">Home</a>
+            <a href="#home-section">About</a>
+            <a href="#home-section">Projects</a>
+            <a href="#home-section">Contact</a>
           </div>
         </div>
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>Follow</h2>
-            <Link
-              to={{ pathname: 'https://www.linkedin.com/in/jongwooha' }}
+            <a
+              href="https://www.linkedin.com/in/jongwooha"
+              rel="noreferrer"
               target="_blank"
             >
               LinkedIn
-            </Link>
-            <Link
-              to={{ pathname: 'https://github.com/jongwooha98' }}
+            </a>
+            <a
+              href="https://github.com/jongwooha98"
+              rel="noreferrer"
               target="_blank"
             >
               GitHub
-            </Link>
+            </a>
           </div>
         </div>
       </div>
       <section className="social-media">
-        <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link to="/" className="social-logo">
-              JWH <i className="fas fa-circle-notch" />
-            </Link>
+        <div className="social-media-wrapper">
+          <div className="footer-copyright">
+            <a href="#home-section" className="copyright">
+              <small>JongWoo Ha © 2021</small>
+            </a>
           </div>
-          <small className="copyright">JONGWOO HA © 2021</small>
           <div className="social-icons">
-            <Link
+            <a
               className="social-icon-link linkedin"
-              to={{ pathname: 'https://www.linkedin.com/in/jongwooha' }}
+              href="https://www.linkedin.com/in/jongwooha"
+              rel="noreferrer"
               target="_blank"
               aria-label="LinkedIn"
             >
               <i className="fab fa-linkedin" />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link instagram"
-              to={{ pathname: 'https://github.com/jongwooha98' }}
+              href="https://github.com/jongwooha98"
+              rel="noreferrer"
               target="_blank"
               aria-label="GitHub"
             >
               <i className="fab fa-github" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
