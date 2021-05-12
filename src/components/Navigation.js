@@ -21,8 +21,11 @@ function Navbar() {
           <span className="navbar-toggler-icon" />
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarToggler">
-          <ul className="navbar-nav justify-content-end">
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarToggler"
+        >
+          <ul className="navbar-nav mr-auto ">
             <li className="nav-item active">
               <a className="nav-link" href="#home-section">
                 Home <span className="sr-only">(current)</span>
