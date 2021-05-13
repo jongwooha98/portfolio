@@ -18,5 +18,8 @@ module.exports = {
     'react/prop-types': 'off',
 
     'no-console': 0,
+
+    // Disabling "...should be listed in the project's dependencies, not devDependencies" message
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
 };

@@ -9,6 +9,8 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "jquery": "^3.6.0",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
@@ -23,7 +25,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "start-server": "node server/index.js",
+    "start-app": "npm run start && npm run build && npm run start-server"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +48,7 @@
     ]
   },
   "devDependencies": {
+    "dotenv": "^9.0.2",
     "eslint": "^7.25.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -53,6 +58,7 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^1.7.0",
     "gh-pages": "^3.1.0",
+    "nodemailer": "^6.6.0",
     "prettier": "2.2.1"
   }
 }

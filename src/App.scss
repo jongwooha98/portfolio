@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: lighten($color-tan, 35%);
+  // overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -30,28 +31,16 @@ body {
 .about-container {
   display: flex;
   flex-direction: column;
+  // flex-wrap: wrap;
   max-width: 1024px;
   width: 90vw;
   margin: 0 auto;
 }
 
-.about__education {
-  /*position*/
-
-  /* display & box */
-  box-sizing: border-box;
-  padding: 5rem;
-  margin-top: 3rem;
-  border-radius: 2rem;
-
-  /* color */
-
-  /*text*/
-}
-
 /* Education Section */
 .education-section {
   // background-color: ivory;
+  padding-top: 10%;
 
   h2 {
     font-size: $font-xlarge;
@@ -99,23 +88,20 @@ body {
     margin: 1rem 0 0 0;
   }
 }
-
 .education:hover {
   transform: scale(1.01);
 }
+
 /* Experience Section */
 .experience-section {
-  // background-color: ivory;
-
+  padding-top: 10%;
   h2 {
     font-size: $font-xlarge;
     margin: 0 0 2.4rem 3.2rem;
     text-align: left;
   }
 }
-
 /* Experience Component */
-
 .experience {
   margin: 0 0 2.4rem 0;
   padding: 1rem;
@@ -157,6 +143,8 @@ body {
 .experience:hover {
   transform: scale(1.01);
 }
+
+/* Projects section */
 .projects {
   display: flex;
   height: 30rem;
@@ -166,62 +154,54 @@ body {
   color: #242424;
 }
 
-/* Contact Page */
-.contact {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  background-image: url('./assets/images/img-2.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
+/* Contact Section */
 
-.footer-subscription {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.contact-form {
+  background: #fff;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 100%;
+}
+.contact-form .form-control {
+  border-radius: 1rem;
+}
+.contact-image {
   text-align: center;
-
-  margin-bottom: 24px;
-  padding: 24px;
-  color: #fff;
 }
-
-// .footer-subscription > p {
-//   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-//     'Lucida Sans', Arial, sans-serif;
-// }
-
-// .footer-subscription-heading {
-//   margin-bottom: 24px;
-//   font-size: 24px;
-// }
-
-// .footer-subscription-text {
-//   margin-bottom: 24px;
-//   font-size: 20px;
-// }
-
-// .footer-input {
-//   padding: 8px 20px;
-//   border-radius: 2px;
-//   margin-right: 10px;
-//   outline: none;
-//   border: none;
-//   font-size: 18px;
-//   margin-bottom: 16px;
-//   border: 1px solid #fff;
-// }
-// .footer-email-form h2 {
-//   margin-bottom: 2rem;
-// }
-
-// .footer-input::placeholder {
-//   color: #b1b1b1;
-// }
+.contact-image img {
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
+.contact-form form {
+  padding: 14%;
+}
+.contact-form form .row {
+  margin-bottom: -7%;
+}
+.contact-form h3 {
+  margin-bottom: 8%;
+  margin-top: -10%;
+  text-align: center;
+  color: #0062cc;
+}
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.5%;
+  background: #dc3545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.btnContactSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
