@@ -1,78 +1,62 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from './Button.js';
-
+import React from 'react';
 import './Navbar.scss';
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  // nav button appears when window width <= 960,
-  // then dissapears when the width is larger than that
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener('resize', showButton);
-
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          JWH <i className="fas fa-circle-notch " />
-        </Link>
-        <div
-          role="button"
-          className="menu-icon"
-          onClick={handleClick}
-          tabIndex="0"
-          onKeyDown={handleClick}
+    <nav className="navbar navbar-expand-lg sticky-top navbar-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="#home-section">
+          JongWoo Ha
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <span className="navbar-toggler-icon" />
+        </button>
+
+        <div
+          className="collapse navbar-collapse justify-content-end"
+          id="navbarToggler"
+        >
+          <ul className="navbar-nav mr-auto ">
+            <li className="nav-item active">
+              <a className="nav-link" href="#home-section">
+                Home <span className="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#skills-section">
+                Skills
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#experience-section">
+                Experience
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#education-section">
+                Education
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#projects-section">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#about-section">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className="nav-item">
-            <Link to="/" className="nav-link" onClick={closeMobileMenu}>
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-link" onClick={closeMobileMenu}>
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/projects" className="nav-link" onClick={closeMobileMenu}>
-              Projects
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact"
-              className="nav-link-mobile"
-              onClick={closeMobileMenu}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-        {button && (
-          <Button linkTo="./contact" buttonStyle="btn--outline">
-            Contact
-          </Button>
-        )}
       </div>
     </nav>
   );

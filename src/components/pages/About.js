@@ -99,7 +99,7 @@ function About() {
         <h1>Hi, I&apos;m Jong</h1>
       </div>
       <div className="about-container">
-        <div className="education-section">
+        <div id="education-section" className="education-section">
           <h2>Education</h2>
           <Education
             logo={psulogo}
@@ -133,7 +133,7 @@ function About() {
             ]}
           />
         </div>
-        <div className="experience-section">
+        <div id="experience-section" className="experience-section">
           <h2>Experience</h2>
           <Experience
             logo={psulogo}
@@ -219,10 +219,6 @@ function About() {
               'Communicated with companies and secured $6000 monetary sponsorship from ManTech and Linode',
             ]}
           />
-        </div>
-
-        <div className="skills-section">
-          <h2>Skills</h2>
         </div>
       </div>
     </div>
