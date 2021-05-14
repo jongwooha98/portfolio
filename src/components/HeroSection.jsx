@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './Button.js';
+import { Button } from './Button.jsx';
 import '../App.scss';
 import './HeroSection.scss';
 
