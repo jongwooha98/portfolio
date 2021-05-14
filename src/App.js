@@ -11,7 +11,7 @@ import './App.scss';
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
       <Home />
       <Skills />
@@ -19,7 +19,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 

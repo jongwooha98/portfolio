@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import '../../App.scss';
 
-export default function Contact() {
+function Contact() {
   const [state, setState] = useState({
     name: '',
     email: '',
@@ -76,65 +76,105 @@ export default function Contact() {
   // const buttonText = { status };
 
   return (
-    <div className="container contact-form">
-      <div className="contact-image">
-        <img
-          src="https://image.ibb.co/kUagtU/rocket_contact.png"
-          alt="rocket_contact"
-        />
+    <div className="container contact-section">
+      <div className="contact__email">
+        <div className="contact-image">
+          <i className="fas fa-rocket" />
+        </div>
+        <form className="contact-form" method="POST" onSubmit={handleSubmit}>
+          <h3>Send Me a Message</h3>
+          <div className="form-group">
+            <label htmlFor="name">
+              Name
+              <input
+                type="text"
+                id="name"
+                className="form-control"
+                value={state.name}
+                onChange={handleChange}
+              />
+            </label>
+          </div>
+          <div className="form-group">
+            <label htmlFor="email">
+              Email
+              <input
+                type="email"
+                id="email"
+                className="form-control"
+                value={state.email}
+                onChange={handleChange}
+                required
+              />
+            </label>
+          </div>
+          <div className="form-group">
+            <label htmlFor="subject">
+              Subject
+              <input
+                id="subject"
+                className="form-control"
+                value={state.subject}
+                onChange={handleChange}
+                required
+              />
+            </label>
+          </div>
+          <div className="form-group">
+            <label htmlFor="message">
+              Message
+              <textarea
+                id="message"
+                className="form-control"
+                value={state.message}
+                onChange={handleChange}
+                required
+              />
+            </label>
+          </div>
+          <div className="form-group">
+            <button type="submit" className="submit-button">
+              {/* {buttonText} */}
+              Submit
+            </button>
+          </div>
+          <div>
+            {result && (
+              <p className={`${result.success ? 'success' : 'error'}`}>
+                {result.message}
+              </p>
+            )}
+          </div>
+        </form>
       </div>
-
-      {result && (
-        <p className={`${result.success ? 'success' : 'error'}`}>
-          {result.message}
-        </p>
-      )}
-      <form method="POST" onSubmit={handleSubmit}>
-        <h3>Drop Me a Message</h3>
-        <div className="form-group">
-          <input
-            type="text"
-            id="name"
-            className="form-control"
-            value={state.name}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <input
-            type="email"
-            id="email"
-            className="form-control"
-            value={state.email}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <textarea
-            id="subject"
-            className="form-control"
-            value={state.subject}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <textarea
-            id="message"
-            className="form-control"
-            value={state.message}
-            onChange={handleChange}
-            required
-          />
-        </div>
-        <div className="form-group">
-          <button type="submit" className="btnContact">
-            {/* {buttonText} */}
-            Submit
-          </button>
-        </div>
-      </form>
+      <div className="contact__social-media">
+        <ul className="social-icons">
+          <li>
+            <a
+              className="social-icon-link linkedin"
+              href="https://www.linkedin.com/in/jongwooha"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin" />
+            </a>
+          </li>
+          <li>
+            <a
+              className="social-icon-link instagram"
+              href="https://github.com/jongwooha98"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i className="fab fa-github" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
+
+export default Contact;
