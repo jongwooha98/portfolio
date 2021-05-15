@@ -76,13 +76,22 @@ function Contact() {
   // const buttonText = { status };
 
   return (
-    <div className="container contact-section">
+    <div className="contact-section container-fluid">
       <div className="contact__email">
-        <div className="contact-image">
-          <i className="fas fa-rocket" />
-        </div>
         <form className="contact-form" method="POST" onSubmit={handleSubmit}>
-          <h3>Send Me a Message</h3>
+          <div className="contact-image">
+            <i className="fas fa-rocket" />
+          </div>
+          <h3>Getting in touch is easy!</h3>
+          <h4>
+            <br />
+            Fill out the form below and let&apos;s make amazing things happen!
+          </h4>
+          <p>
+            Contact form is currently not working. <br />
+            Please contact me through social media or send me an email at
+            jongwooha1@gmail.com
+          </p>
           <div className="form-group">
             <label htmlFor="name">
               Name
@@ -157,18 +166,29 @@ function Contact() {
               target="_blank"
               aria-label="LinkedIn"
             >
-              <i className="fab fa-linkedin" />
+              <i className="fab fa-linkedin-in" />
             </a>
           </li>
           <li>
             <a
-              className="social-icon-link instagram"
+              className="social-icon-link github"
               href="https://github.com/jongwooha98"
               rel="noreferrer"
               target="_blank"
               aria-label="GitHub"
             >
               <i className="fab fa-github" />
+            </a>
+          </li>
+          <li>
+            <a
+              className="social-icon-link codepen"
+              href="https://codepen.io/jongwooha98"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="CodePen"
+            >
+              <i className="fab fa-codepen" />
             </a>
           </li>
         </ul>
