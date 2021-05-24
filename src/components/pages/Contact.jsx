@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import '../../App.scss';
 
+import codesandbox from '../../assets/images/codesandbox.png';
+
 function Contact() {
   const [state, setState] = useState({
     name: '',
@@ -189,6 +191,19 @@ function Contact() {
               aria-label="CodePen"
             >
               <i className="fab fa-codepen" />
+            </a>
+          </li>
+          <li>
+            <a
+              className="social-icon-link codesandbox"
+              href="https://codesandbox.io/dashboard/all/?workspace=aa3e9311-a523-43ce-9b87-6980fc77748a"
+              rel="noreferrer"
+              target="_blank"
+              aria-label="CodeSandbox"
+            >
+              <i>
+                <img src={codesandbox} alt="codesandbox" />
+              </i>
             </a>
           </li>
         </ul>

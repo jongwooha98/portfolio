@@ -29,7 +29,12 @@ body {
 /* Skills Section */
 .skills-section {
   width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
   padding: 5% 0;
+
   h1 {
     font-size: $font-xlarge;
     color: #242424;
@@ -333,6 +338,14 @@ body {
           }
           &.codepen {
             background-color: #0ebeff;
+          }
+          &.codesandbox {
+            background-color: #8739f9;
+            img {
+              max-width: 80%;
+              height: auto;
+              filter: invert(100%);
+            }
           }
 
           &:hover {
