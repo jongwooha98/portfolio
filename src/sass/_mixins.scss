@@ -1,0 +1,40 @@
+@import './variables.scss';
+
+@mixin --viewportSm {
+  @media (min-width: $breakpointSm) {
+    @content;
+  }
+}
+
+@mixin --viewportMd {
+  @media (min-width: $breakpointMd) {
+    @content;
+  }
+}
+
+@mixin --viewportLg {
+  @media (min-width: $breakpointLg) {
+    @content;
+  }
+}
+
+@mixin --rippleEffect {
+  & {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  &:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+      center/15000%;
+  }
+  &:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+
+@mixin --textStroke {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
