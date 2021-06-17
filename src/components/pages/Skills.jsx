@@ -16,7 +16,7 @@ function Skill(props) {
 function Skills() {
   return (
     <>
-      <div id="skills-section" className="skills-section container-fluid">
+      <div id="skills" className="skills-section container-fluid">
         <h1>Skills</h1>
         <h2>
           <span>Keep on practicing, </span> master new skills everyday

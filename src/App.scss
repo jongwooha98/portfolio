@@ -1,4 +1,5 @@
-@import './style.scss';
+@import './sass/variables.scss';
+@import './sass/mixins.scss';
 
 * {
   margin: 0;
@@ -26,26 +27,207 @@ body {
 //   box-sizing: border-box;
 // }
 
-/* Skills Section */
-.skills-section {
-  width: 80vw;
-  height: 100vh;
+/* Education Section */
+.education-section {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  align-items: center;
+  background-color: lighten($color-tan, 35%);
   padding: 5% 0;
 
+  font-size: $font-small;
   h1 {
     font-size: $font-xlarge;
     color: #242424;
     text-align: center;
-    margin: 2% 0;
+    margin: 3rem 0;
   }
   h2 {
-    font-size: $font-large;
+    width: 90vw;
+
+    font-size: $font-medium;
+    @include --viewportMd {
+      font-size: $font-large;
+    }
+    color: lighten($color-blackboard, 10%);
+    text-align: center;
+    margin: 1% 0;
+  }
+
+  /* Education Component */
+  .education {
+    display: flex;
+    flex-flow: column;
+
+    width: 90vw;
+    @include --viewportMd {
+      width: 80vw;
+    }
+    @include --viewportLg {
+      width: 70vw;
+    }
+    margin: 1.2rem 0;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
+
+    .education__info {
+      display: flex;
+      flex-flow: row;
+      .education__logo img {
+        width: 5rem;
+        height: 5rem;
+        border: 50%;
+        margin: 1rem 1.6rem 0 3rem;
+      }
+      .education__details {
+        .education__school {
+          a {
+            text-decoration: inherit;
+            color: inherit;
+            cursor: auto;
+          }
+          h3 {
+            font-size: $font-medium;
+          }
+        }
+        .education__degree {
+          h4 {
+            font-size: $font-small;
+          }
+        }
+        .education__duration {
+          font-size: $font-xsmall;
+        }
+        .education__location {
+          color: #4a4b46;
+          font-size: $font-xsmall;
+        }
+      }
+    }
+
+    .education__description {
+      width: 90%;
+      margin: 1rem auto;
+      font-size: $font-small;
+    }
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
+
+/* Experience Section */
+.experience-section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  background-color: #fff;
+  padding: 5% 0;
+  font-size: $font-small;
+  h1 {
+    font-size: $font-xlarge;
+    color: #242424;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  h2 {
+    width: 90vw;
+
+    font-size: $font-medium;
+    @include --viewportMd {
+      font-size: $font-large;
+    }
     color: lighten($color-blackboard, 15%);
     text-align: center;
     margin: 1% 0;
+  }
+
+  /* Experience Component */
+  .experience {
+    display: flex;
+    flex-flow: column;
+    width: 90vw;
+    @include --viewportMd {
+      width: 80vw;
+    }
+    @include --viewportLg {
+      width: 70vw;
+    }
+    margin: 1.2rem 0;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
+    .experience__info {
+      display: flex;
+      flex-flow: row;
+      .experience__logo img {
+        width: 5rem;
+        height: 5rem;
+        border: 50%;
+        margin: 1rem 1.6rem 0 3rem;
+      }
+      .experience__details {
+        .experience__title {
+          h3 {
+            font-size: $font-medium;
+          }
+        }
+
+        .experience__organization {
+          a {
+            text-decoration: inherit;
+            color: inherit;
+            cursor: auto;
+          }
+          h4 {
+            font-size: $font-small;
+          }
+        }
+        .experience__duration {
+          font-size: $font-xsmall;
+        }
+        .experience__location {
+          color: #4a4b46;
+          font-size: $font-xsmall;
+        }
+      }
+    }
+
+    .experience__description {
+      width: 90%;
+      margin: 1rem auto;
+      font-size: $font-small;
+    }
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
+
+/* Skills Section */
+.skills-section {
+  // height: 80vh;
+  display: flex;
+  flex-flow: column;
+  // justify-content: center;
+  width: 80vw;
+  margin: 3rem auto;
+  padding: 3rem 0;
+  h1 {
+    font-size: $font-xlarge;
+    color: #242424;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-size: $font-medium;
+    color: lighten($color-blackboard, 15%);
+    text-align: center;
+    margin-bottom: 3rem;
   }
   .skills-wrapper {
     display: flex;
@@ -57,7 +239,7 @@ body {
     .skill {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
       margin: 1%;
       width: 8rem;
       height: 8rem;
@@ -83,137 +265,6 @@ body {
           transform: rotate(-360deg);
         }
       }
-    }
-  }
-}
-
-/* Education Section */
-.education-section {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  background-color: lighten($color-tan, 35%);
-  padding: 5% 0;
-  font-size: $font-small;
-  h1 {
-    font-size: $font-xlarge;
-    color: #242424;
-    text-align: center;
-    margin: 2% 0;
-  }
-  h2 {
-    font-size: $font-large;
-    color: lighten($color-blackboard, 10%);
-    text-align: center;
-    margin: 1% 0;
-  }
-
-  /* Education Component */
-  .education {
-    width: 80%;
-    margin: 1.2rem 0;
-    padding: 3rem 1rem;
-    background-color: #fff;
-    border-radius: 2rem;
-    box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
-
-    .education__logo img {
-      width: 5rem;
-      height: 5rem;
-      border: 50%;
-      margin: 1rem 1.6rem 0 3rem;
-    }
-    .education__school {
-      a {
-        text-decoration: inherit;
-        color: inherit;
-        cursor: auto;
-      }
-      h3 {
-        font-size: $font-large;
-      }
-    }
-    .education__degree {
-      h4 {
-        font-size: $font-small;
-      }
-    }
-    .education__duration {
-      font-size: $font-xsmall;
-    }
-    .education__location {
-      color: #4a4b46;
-      font-size: $font-xsmall;
-    }
-    .education__description {
-      margin: 1rem 0 0 0;
-    }
-    &:hover {
-      transform: scale(1.01);
-    }
-  }
-}
-
-/* Experience Section */
-.experience-section {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  background-color: #fff;
-  padding: 5% 0;
-  font-size: $font-small;
-  h1 {
-    font-size: $font-xlarge;
-    color: #242424;
-    text-align: center;
-    margin: 2% 0;
-  }
-  h2 {
-    font-size: $font-large;
-    color: lighten($color-blackboard, 15%);
-    text-align: center;
-    margin: 1% 0;
-  }
-
-  /* Experience Component */
-  .experience {
-    width: 80%;
-    margin: 1.2rem 0;
-    padding: 3rem 1rem;
-    background-color: #fff;
-    border-radius: 2rem;
-    box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
-    .experience__logo img {
-      width: 5rem;
-      height: 5rem;
-      border: 50%;
-      margin: 1rem 1.6rem 0 3rem;
-    }
-    h3 {
-      font-size: $font-large;
-    }
-    .experience__organization {
-      a {
-        text-decoration: inherit;
-        color: inherit;
-        cursor: auto;
-      }
-      h4 {
-        font-size: $font-small;
-      }
-    }
-    .experience__duration {
-      font-size: $font-xsmall;
-    }
-    .experience__location {
-      color: #4a4b46;
-      font-size: $font-xsmall;
-    }
-    .experience__description {
-      margin-top: 1rem;
-    }
-    &:hover {
-      transform: scale(1.01);
     }
   }
 }
@@ -362,70 +413,70 @@ body {
   }
 }
 
-@media screen and (max-width: 780px) {
-  .skills-section {
-    padding-top: 5rem;
-    h2 {
-      font-size: $font-medium;
-      padding: 2rem 0;
-      span::after {
-        content: '\a';
-        white-space: pre;
-      }
-    }
-  }
-  .education-section {
-    padding-top: 5rem;
-    h2 {
-      font-size: $font-medium;
-      padding: 2rem 0;
-    }
-    .education {
-      width: 92vw;
-      padding: 3% 1%;
-      .education__logo img {
-        width: 5rem;
-        height: 5rem;
-        border: 50%;
-        margin: 1rem 1.6rem 0 0;
-      }
-    }
-  }
-  .experience-section {
-    padding-top: 5rem;
-    h2 {
-      font-size: $font-medium;
-      padding: 2rem 0;
-      span::after {
-        content: '\a';
-        white-space: pre;
-      }
-    }
-    .experience {
-      width: 92vw;
-      padding: 3% 1%;
+// @media screen and (max-width: 780px) {
+//   .skills-section {
+//     padding-top: 5rem;
+//     h2 {
+//       font-size: $font-medium;
+//       padding: 2rem 0;
+//       span::after {
+//         content: '\a';
+//         white-space: pre;
+//       }
+//     }
+//   }
+//   .education-section {
+//     padding-top: 5rem;
+//     h2 {
+//       font-size: $font-medium;
+//       padding: 2rem 0;
+//     }
+//     .education {
+//       width: 92vw;
+//       padding: 3% 1%;
+//       .education__logo img {
+//         width: 5rem;
+//         height: 5rem;
+//         border: 50%;
+//         margin: 1rem 1.6rem 0 0;
+//       }
+//     }
+//   }
+//   .experience-section {
+//     padding-top: 5rem;
+//     h2 {
+//       font-size: $font-medium;
+//       padding: 2rem 0;
+//       span::after {
+//         content: '\a';
+//         white-space: pre;
+//       }
+//     }
+//     .experience {
+//       width: 92vw;
+//       padding: 3% 1%;
 
-      .experience__logo img {
-        margin: 1rem 1.6rem 0 0;
-      }
-    }
-  }
-  .contact-section {
-    padding-top: 5rem;
-    width: 95vw;
-    flex-flow: column;
-    .contact__social-media {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      margin-right: 0;
-      ul.social-icons {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-        width: 80%;
-        margin: 2rem auto;
-      }
-    }
-  }
-}
+//       .experience__logo img {
+//         margin: 1rem 1.6rem 0 0;
+//       }
+//     }
+//   }
+//   .contact-section {
+//     padding-top: 5rem;
+//     width: 95vw;
+//     flex-flow: column;
+//     .contact__social-media {
+//       display: flex;
+//       flex-flow: column;
+//       justify-content: center;
+//       margin-right: 0;
+//       ul.social-icons {
+//         display: flex;
+//         flex-flow: row;
+//         justify-content: space-evenly;
+//         width: 80%;
+//         margin: 2rem auto;
+//       }
+//     }
+//   }
+// }

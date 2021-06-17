@@ -10,34 +10,30 @@ import hackpsu from '../../assets/images/hackpsu.png';
 function Education(props) {
   const { logo, school, url, degree, duration, location, description } = props;
   return (
-    <div className="education d-flex">
-      <div className="flex-shrink-1">
+    <div className="education">
+      <div className="education__info">
         <div className="education__logo">
           <a href={url}>
             <img src={logo} alt={`${school} Logo`} />
           </a>
         </div>
-      </div>
-      <div className="flex-wrap">
-        <div>
+        <div className="education__details">
           <div className="education__school">
             <h3>{school}</h3>
           </div>
           <div className="education__degree">
             <h4>{degree}</h4>
           </div>
-        </div>
-        <div>
           <div className="education__duration">{duration}</div>
           <div className="education__location">{location}</div>
-          <div className="education__description">
-            <ul>
-              {description.map(x => (
-                <li>{x}</li>
-              ))}
-            </ul>
-          </div>
         </div>
+      </div>
+      <div className="education__description">
+        <ul>
+          {description.map(x => (
+            <li>{x}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
@@ -54,34 +50,30 @@ function Experience(props) {
     description,
   } = props;
   return (
-    <div className="experience d-flex">
-      <div className="flex-shrink-1">
+    <div className="experience">
+      <div className="experience__info">
         <div className="experience__logo">
           <a href={url}>
             <img src={logo} alt={`${organization} Logo`} />
           </a>
         </div>
-      </div>
-      <div className="flex-wrap">
-        <div>
-          <div className="expereience__title">
+        <div className="experience__details">
+          <div className="experience__title">
             <h3>{title}</h3>
           </div>
           <div className="experience__organization">
             <h4>{organization}</h4>
           </div>
-        </div>
-        <div>
           <div className="experience__duration">{duration}</div>
           <div className="experience__location">{location}</div>
-          <div className="experience__description">
-            <ul>
-              {description.map(x => (
-                <li>{x}</li>
-              ))}
-            </ul>
-          </div>
         </div>
+      </div>
+      <div className="experience__description">
+        <ul>
+          {description.map(x => (
+            <li>{x}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
@@ -90,7 +82,7 @@ function Experience(props) {
 function About() {
   return (
     <>
-      <div id="education-section" className="education-section container-fluid">
+      <div id="education" className="education-section container-fluid">
         <h1>Education</h1>
         <h2>Invest in knowledge</h2>
         <Education
@@ -125,10 +117,7 @@ function About() {
           ]}
         />
       </div>
-      <div
-        id="experience-section"
-        className="experience-section container-fluid"
-      >
+      <div id="experience" className="experience-section container-fluid">
         <h1>Experience</h1>
         <h2>
           <span>Learn from the past experience, </span> prepare for future
