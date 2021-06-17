@@ -1,13 +1,14 @@
-@import '../style.scss';
+@import '../sass/variables.scss';
+@import '../sass/mixins.scss';
 
 .navbar {
   box-sizing: border-box;
   background-color: lighten($color-tan, 30%);
-
+  // height: 3rem;
   .container-fluid {
     width: 80%;
     margin: auto;
-    a.navbar-brand {
+    .navbar-brand {
       color: black;
       font-size: $font-medium;
       margin: 0 0 0 2rem;
@@ -20,7 +21,7 @@
         .nav-item {
           border-radius: 3rem;
           padding: 1rem;
-          a.nav-link {
+          .nav-link {
             color: black;
             font-size: $font-medium;
           }
@@ -29,7 +30,7 @@
           background-color: lighten($color-oxblood, 15%);
           box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
 
-          a.nav-link {
+          .nav-link {
             color: #fff;
           }
         }
@@ -37,11 +38,11 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
-  .navbar {
-    .container-fluid {
-      width: 100%;
-      margin: auto;
-    }
-  }
-}
+// @media screen and (max-width: 768px) {
+//   .navbar {
+//     .container-fluid {
+//       width: 100%;
+//       margin: auto;
+//     }
+//   }
+// }
