@@ -1,4 +1,5 @@
-@import '../style.scss';
+@import '../sass/variables.scss';
+@import '../sass/mixins.scss';
 
 .footer-container {
   background-color: $color-oxblood;
