@@ -1,13 +1,13 @@
 import React from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar.jsx';
+import Navbar from './components/nav/Navbar';
 import Home from './components/pages/Home.jsx';
 import Skills from './components/pages/Skills.jsx';
 import About from './components/pages/About.jsx';
 import Projects from './components/pages/Projects.jsx';
 import Contact from './components/pages/Contact.jsx';
-import Footer from './components/Footer.jsx';
+import Footer from './components/footer/Footer';
 
 import './App.scss';
 

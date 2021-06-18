@@ -1,0 +1,178 @@
+@import '../../sass/_variables.scss';
+@import '../../sass/_mixins';
+
+.navbar {
+  height: 3.5rem;
+  @include --viewportMd {
+    height: 5.5rem;
+  }
+  padding: 0;
+  max-width: 100% !important;
+  background: #2d3c46;
+  .navbar__container {
+    .navbar-brand {
+      padding-left: 1rem;
+      img {
+        width: 3rem;
+        height: 3rem;
+        @include --viewportMd {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+    }
+    .navbar-toggler {
+      margin-right: 1rem;
+      padding: 0;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      .toggler-icon {
+        color: #fff;
+        font-size: 2rem;
+        @include --viewportMd {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    // z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    // z-index: -1;
+    transition: all 0.1s;
+    background: rgb(45, 60, 70);
+
+    &.show {
+      min-height: 100vh;
+      visibility: visible;
+      opacity: 1;
+      // z-index: 9;
+      .navbar-nav {
+        .nav-item {
+          opacity: 1;
+        }
+      }
+    }
+    .navbar-collapse__top {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      width: 100%;
+      // height: 3rem;
+
+      .navbar-brand {
+        align-self: flex-end;
+
+        padding-left: 1rem;
+        img {
+          width: 3rem;
+          height: 3rem;
+          @include --viewportMd {
+            width: 5rem;
+            height: 5rem;
+          }
+        }
+      }
+      .navbar-collapse__toggler {
+        align-self: flex-end;
+
+        margin-right: 1rem;
+        background: transparent;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        .toggler-icon {
+          color: #fff;
+          font-size: 2rem;
+          @include --viewportMd {
+            font-size: 4rem;
+          }
+        }
+      }
+    }
+
+    .navbar-nav {
+      display: flex;
+      align-items: flex-start;
+      width: 60%;
+      margin-top: 5rem;
+
+      .nav-item {
+        border-radius: 1.5rem;
+        padding: 0.25rem 1rem;
+        .nav-link {
+          color: #fff;
+          font-size: $font-large;
+          @include --viewportMd {
+            font-size: $font-large;
+          }
+        }
+        &:hover {
+          background-color: lighten($colorPrimary, 15%);
+          box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
+          .nav-link {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lock-scroll {
+  overflow: hidden;
+}
+
+// @import '../sass/variables.scss';
+// @import '../sass/mixins.scss';
+
+// .navbar {
+//   box-sizing: border-box;
+//   background-color: lighten($color-tan, 30%);
+//   // height: 3rem;
+//   .container-fluid {
+//     .navbar-brand {
+//       color: black;
+//       font-size: $font-medium;
+//       margin: 0 0 0 2rem;
+//     }
+//     .navbar-collapse {
+//       .navbar-nav {
+//         width: 80%;
+
+//         text-align: justify; /* For Edge */
+//         -moz-text-align-last: center; /* For Firefox prior 58.0 */
+//         text-align-last: center;
+//         .nav-item {
+//           border-radius: 3rem;
+//           padding: 1rem;
+//           .nav-link {
+//             color: black;
+//             font-size: $font-medium;
+//           }
+//         }
+//         .nav-item:hover {
+//           background-color: lighten($color-oxblood, 15%);
+//           box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
+
+//           .nav-link {
+//             color: #fff;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

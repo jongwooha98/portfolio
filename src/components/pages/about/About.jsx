@@ -1,11 +1,12 @@
 import React from 'react';
-import '../../App.scss';
+import './_about.scss';
 
 import psulogo from '../../assets/images/psulogo.png';
 import yonseilogo from '../../assets/images/yonseilogo.png';
 import ychslogo from '../../assets/images/ychslogo.png';
 import psuuas from '../../assets/images/psuuas.png';
 import hackpsu from '../../assets/images/hackpsu.png';
+import privateTutorLogo from '../../assets/images/private_tutor_logo.png';
 
 function Education(props) {
   const { logo, school, url, degree, duration, location, description } = props;
@@ -184,10 +185,10 @@ function About() {
           ]}
         />
         <Experience
-          logo=""
+          logo={privateTutorLogo}
           title="Private Tutor"
           organization="Self-employed"
-          url=""
+          // url=""
           duration="May 2017 - Aug 2017"
           location="Seoul, South Korea"
           description={[

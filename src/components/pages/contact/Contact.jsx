@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './_contact.scss';
 
-import '../../App.scss';
-
-import codesandbox from '../../assets/images/codesandbox.png';
+import codesandbox from '';
 
 function Contact() {
   const [state, setState] = useState({

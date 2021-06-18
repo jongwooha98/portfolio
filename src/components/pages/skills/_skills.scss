@@ -1,0 +1,60 @@
+/* Skills Section */
+.skills-section {
+  // height: 80vh;
+  display: flex;
+  flex-flow: column;
+  // justify-content: center;
+  width: 80vw;
+  margin: 3rem auto;
+  padding: 3rem 0;
+  h1 {
+    font-size: $font-xlarge;
+    color: #242424;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-size: $font-medium;
+    color: lighten($color-blackboard, 15%);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .skills-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    /* Skill Component */
+    .skill {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1%;
+      width: 8rem;
+      height: 8rem;
+      color: #fff;
+      border-radius: 1rem;
+      text-align: center;
+      overflow: hidden;
+      font-size: 4rem;
+      z-index: 1;
+      transition: transform 0.4s linear 0s,
+        border-top-left-radius 0.1s linear 0s,
+        border-top-right-radius 0.1s linear 0.1s,
+        border-bottom-right-radius 0.1s linear 0.2s,
+        border-bottom-left-radius 0.1s linear 0.3s;
+      i {
+        position: relative;
+        transition: transform 0.4s linear 0s;
+      }
+      &:hover {
+        transform: rotate(360deg);
+        border-radius: 50%;
+        i {
+          transform: rotate(-360deg);
+        }
+      }
+    }
+  }
+}

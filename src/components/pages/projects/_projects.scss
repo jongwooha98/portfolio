@@ -1,0 +1,10 @@
+/* Projects section */
+.projects {
+  display: flex;
+  height: 30rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #242424;
+  background-color: lighten($color-oxblood, 35%);
+}

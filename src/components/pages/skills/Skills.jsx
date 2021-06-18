@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../App.scss';
+import './_skills.scss';
 
 function Skill(props) {
   const { skill, icon, logoColor } = props;
