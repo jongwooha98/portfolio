@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
+import Button from './Button';
+import Menu from './Menu';
+import items from './projectsData';
 // import Cards from '../Cards.jsx';
 import './_projects.scss';
-
-import items from './projectsData';
-import Menu from './Menu';
-import Button from './Button';
 
 const allCategories = ['All', ...new Set(items.map(item => item.category))];
 
