@@ -1,13 +1,13 @@
-@import './sass/variables';
-@import './sass/mixins.scss';
+@import 'sass/variables';
+@import 'sass/mixins.scss';
 
-@import './components/footer/footer.scss';
-@import './components/nav/navbar.scss';
-@import './components/pages/about/_about.scss';
-@import './components/pages/contact/_contact.scss';
-@import './components/pages/home/_home.scss';
-@import './components/pages/projects/_projects.scss';
-@import './components/pages/skills/_skills.scss';
+@import 'components/footer/footer.scss';
+@import 'components/nav/navbar.scss';
+@import 'components/pages/about/_about.scss';
+@import 'components/pages/contact/_contact.scss';
+@import 'components/pages/home/_home.scss';
+@import 'components/pages/projects/_projects.scss';
+@import 'components/pages/skills/_skillsz.scss';
 
 * {
   margin: 0;

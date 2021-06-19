@@ -1,15 +1,13 @@
 import React from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
-
-import Navbar from './components/nav/Navbar';
-import Home from './components/pages/Home.jsx';
-import Skills from './components/pages/Skills.jsx';
-import About from './components/pages/About.jsx';
-import Projects from './components/pages/Projects.jsx';
-import Contact from './components/pages/Contact.jsx';
-import Footer from './components/footer/Footer';
-
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
+import Footer from './components/footer/Footer';
+import Navbar from './components/nav/Navbar';
+import About from './components/pages/about/About';
+import Contact from './components/pages/contact/Contact.jsx';
+import Home from './components/pages/home/Home';
+import Projects from './components/pages/projects/Projects.jsx';
+import Skills from './components/pages/skills/Skills.jsx';
 
 function App() {
   return (
