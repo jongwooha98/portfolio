@@ -1,12 +1,41 @@
-@import 'sass/_variables.scss';
-@import 'sass/_mixins.scss';
+@import '/src/sass/variables';
+@import '/src/sass/_mixins.scss';
 /* Projects section */
-.projects {
+
+.projects-section {
   display: flex;
-  height: 30rem;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  color: #242424;
-  background-color: lighten($color-oxblood, 35%);
+  flex-flow: column;
+  .title {
+    text-align: center;
+    h1 {
+      font-size: $font-large;
+    }
+  }
+  .buttons {
+    // text-align: center;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    .button {
+      padding: 1rem 2rem;
+      width: fit-content;
+      // height: rem;
+      font-size: $font-xsmall;
+      @include --viewportMd {
+        font-size: $font-small;
+      }
+    }
+  }
+  .items {
+    display: flex;
+    flex-flow: column;
+    .item__container {
+      width: 10rem;
+      height: 10rem;
+      .item__details {
+        overflow: wrap;
+      }
+    }
+  }
 }

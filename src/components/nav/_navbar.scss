@@ -1,6 +1,5 @@
-@import '../../sass/_variables.scss';
-@import '../../sass/_mixins';
-
+@import '/src/sass/variables';
+@import '/src/sass/_mixins.scss';
 .navbar {
   height: 3.5rem;
   @include --viewportMd {

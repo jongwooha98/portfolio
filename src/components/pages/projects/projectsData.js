@@ -8,7 +8,7 @@ export default [
     id: 1,
     image: blog1,
     title: 'Tips and tricks to write good code',
-    category: 'Tips',
+    category: 'project',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ea, ab aperiam necessitatibus adipisci sunt facilis itaque non enim est!',
   },
