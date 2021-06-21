@@ -2,6 +2,9 @@
 @import '/src/sass/_mixins.scss';
 .navbar {
   height: 3.5rem;
+  @include --viewportSm {
+    height: 4.5rem;
+  }
   @include --viewportMd {
     height: 5.5rem;
   }
@@ -53,10 +56,11 @@
     background: rgb(45, 60, 70);
 
     &.show {
-      min-height: 100vh;
+      // min-height: 100vh;
       visibility: visible;
       opacity: 1;
-      // z-index: 9;
+      z-index: 9;
+      overflow: scroll;
       .navbar-nav {
         .nav-item {
           opacity: 1;
@@ -134,44 +138,3 @@
 .lock-scroll {
   overflow: hidden;
 }
-
-// @import '../sass/variables.scss';
-// @import '../sass/mixins.scss';
-
-// .navbar {
-//   box-sizing: border-box;
-//   background-color: lighten($color-tan, 30%);
-//   // height: 3rem;
-//   .container-fluid {
-//     .navbar-brand {
-//       color: black;
-//       font-size: $font-medium;
-//       margin: 0 0 0 2rem;
-//     }
-//     .navbar-collapse {
-//       .navbar-nav {
-//         width: 80%;
-
-//         text-align: justify; /* For Edge */
-//         -moz-text-align-last: center; /* For Firefox prior 58.0 */
-//         text-align-last: center;
-//         .nav-item {
-//           border-radius: 3rem;
-//           padding: 1rem;
-//           .nav-link {
-//             color: black;
-//             font-size: $font-medium;
-//           }
-//         }
-//         .nav-item:hover {
-//           background-color: lighten($color-oxblood, 15%);
-//           box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
-
-//           .nav-link {
-//             color: #fff;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
