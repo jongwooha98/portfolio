@@ -1,40 +1,113 @@
 @import '/src/sass/variables';
 @import '/src/sass/_mixins.scss';
 /* Projects section */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .projects-section {
+  padding-top: 5rem;
   display: flex;
   flex-flow: column;
+  color: #fff;
+  background-color: #10121b;
   .title {
     text-align: center;
     h1 {
       font-size: $font-large;
+      font-weight: bold;
     }
   }
   .buttons {
-    // text-align: center;
-
+    width: 70%;
+    margin: 3rem auto;
+    text-align: center;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
     .button {
-      padding: 1rem 2rem;
-      width: fit-content;
+      // padding: 1rem 2rem;
+      // width: fit-content;
+      margin: 0.5rem 0;
+      padding: 0.5rem 2rem;
+      background-color: #0c3564;
+      border: none;
+      border-radius: 0.5rem;
+      // font-family: inherit;
+      // font-size: inherit;
+      color: white;
+      transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
+
       // height: rem;
       font-size: $font-xsmall;
       @include --viewportMd {
         font-size: $font-small;
       }
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+      &:hover {
+        background-color: #037fff;
+        cursor: pointer;
+      }
     }
   }
   .items {
-    display: flex;
-    flex-flow: column;
-    .item__container {
-      width: 10rem;
-      height: 10rem;
-      .item__details {
-        overflow: wrap;
+    width: 95%;
+    @include --viewportSm {
+      width: 85%;
+    }
+    @include --viewportMd {
+      width: 75%;
+    }
+    margin: auto;
+    color: #fff;
+    .item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 1rem;
+      @include --viewportSm {
+        grid-gap: 2rem;
+      }
+      @include --viewportMd {
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-gap: 3rem;
+      }
+      padding-bottom: 6rem;
+
+      .item__container {
+        overflow: hidden;
+
+        width: 100%;
+        padding: 1rem 1rem;
+        @include --viewportMd {
+          padding: 2rem 2rem;
+        }
+        background-color: #19202e;
+        border-radius: 0.5rem;
+        a {
+          width: 3rem;
+          img {
+            width: 100%;
+            border-radius: 0.5rem;
+
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              transform: scale(1.025);
+              cursor: pointer;
+            }
+          }
+        }
+        h2 {
+          margin-top: 2rem;
+          font-size: $font-small;
+          font-weight: bold;
+        }
+        p {
+          font-size: $font-xsmall;
+        }
       }
     }
   }

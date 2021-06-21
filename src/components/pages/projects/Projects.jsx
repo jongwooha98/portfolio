@@ -29,26 +29,39 @@ function Button({ button, filter }) {
 
 function Menu({ menuItem }) {
   return (
-    <>
+    <div className="item">
       {menuItem.map(item => {
         return (
           <div className="item__container" key={item.id}>
-            <div className="item__details">
+            <a href={item.href} target="_blank" rel="noreferrer">
               <img src={item.image} alt="" />
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-            </div>
+            </a>
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+            <a href={item.pdf} target="_blank" rel="noreferrer">
+              <i className="far fa-file-pdf" />
+            </a>
+            <div>
+            {if (item.pdf === '') {
+               
+                <a href={item.pdf} target="_blank" rel="noreferrer">
+              <i className="far fa-file-pdf" />
+            </a>
+              
+            }}</div>
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
 
 export default function Projects() {
-  const [menuItem, setMenuItem] = useState(items); // eslint-disable-line no-unused-vars
+  const itemsReversed = items.reverse(); // reversed data, so latest item is shown first.
+  const [menuItem, setMenuItem] = useState(itemsReversed); // eslint-disable-line no-unused-vars
   const [buttons, setButtons] = useState(allCategories); // eslint-disable-line no-unused-vars
-
+  console.log(items.reverse());
+  console.log(menuItem);
   const filter = button => {
     if (button === 'All') {
       setMenuItem(items);
@@ -64,7 +77,6 @@ export default function Projects() {
       <div className="projects-section">
         <div className="title">
           <h1>Projects</h1>
-          <p>Filter</p>
         </div>
 
         <div className="buttons">
