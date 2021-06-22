@@ -56,45 +56,19 @@
     color: #fff;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
-  }
-  .copyright:hover {
-    text-decoration: none;
-    color: whitesmoke;
-    transition: 0.3s ease-out;
   }
 
   .social-icons {
     display: flex;
     justify-content: space-between;
     width: 10rem;
+    margin: 1rem;
     .social-icon-link {
       color: #fff;
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
 }
-
-// @media screen and (max-width: 780px) {
-//   .footer-links {
-//     padding-top: 2rem;
-//   }
-
-//   .footer-link-wrapper {
-//     width: 80%;
-//   }
-
-//   .btn {
-//     width: 100%;
-//   }
-
-//   .footer-link-wrapper {
-//     flex-direction: column;
-//   }
-
-//   .social-media-wrapper {
-//     flex-direction: column;
-//   }
-// }

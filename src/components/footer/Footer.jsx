@@ -16,7 +16,7 @@ function Footer() {
         <div className="footer-link__item">
           <h2>Explore</h2>
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/experience">Experience</Link>
           <Link to="/projects">Projects</Link>
           <Link to="/contact">Contact</Link>
         </div>
@@ -39,11 +39,6 @@ function Footer() {
         </div>
       </div>
       <section className="social-media">
-        <div className="footer-copyright">
-          <Link to="/" className="copyright">
-            <small>JongWoo Ha © 2021</small>
-          </Link>
-        </div>
         <div className="social-icons">
           <a
             className="social-icon-link linkedin"
@@ -63,6 +58,11 @@ function Footer() {
           >
             <i className="fab fa-github" />
           </a>
+        </div>
+        <div className="footer-copyright">
+          <Link to="/" className="copyright">
+            <small>Designed and Coded by JongWoo Ha © 2021</small>
+          </Link>
         </div>
       </section>
     </div>
