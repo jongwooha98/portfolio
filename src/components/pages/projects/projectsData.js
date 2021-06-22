@@ -6,6 +6,7 @@ import img4 from './assets/images/optical theremin.png';
 import img5 from './assets/images/adc circuit.png';
 import img6 from './assets/images/hydrophobic aircraft.png';
 import img7 from './assets/images/downhole hydraulic.png';
+import img12 from './assets/images/new heim.png';
 
 // pdf
 import pdf1 from './assets/pdf/Instruction Set-DMM.pdf';
@@ -124,6 +125,15 @@ export default [
     category: 'Web Development',
     description: '',
     href: null,
+    pdf: null,
+  },
+  {
+    id: 12,
+    image: img12,
+    title: 'New Heim Project',
+    category: 'Web Development',
+    description: '',
+    href: 'https://jongwooha98.github.io/new-heim',
     pdf: null,
   },
 ];
