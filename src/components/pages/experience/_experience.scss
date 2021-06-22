@@ -6,7 +6,6 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-
   background-color: #fff;
   padding: 5rem 0;
   font-size: $font-small;
@@ -17,7 +16,6 @@
   }
   h2 {
     width: 90vw;
-
     font-size: $font-medium;
     @include --viewportMd {
       font-size: $font-large;
