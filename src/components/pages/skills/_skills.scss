@@ -1,14 +1,14 @@
 @import '/src/sass/variables';
 @import '/src/sass/_mixins.scss';
+
 /* Skills Section */
 .skills-section {
-  // height: 80vh;
   display: flex;
   flex-flow: column;
-  // justify-content: center;
-  width: 80vw;
-  margin: 3rem auto;
-  padding: 3rem 0;
+  // height: vh;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  background-color: #fff;
   h1 {
     font-size: $font-xlarge;
     color: #242424;
@@ -24,8 +24,9 @@
   .skills-wrapper {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
     justify-content: center;
+    width: 80%;
+    margin: 5rem auto;
 
     /* Skill Component */
     .skill {
