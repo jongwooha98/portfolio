@@ -54,40 +54,40 @@
     }
   }
   .items {
-    width: 95%;
+    width: 90%;
     @include --viewportSm {
-      width: 85%;
+      width: 90%;
     }
     @include --viewportMd {
-      width: 75%;
+      width: 85%;
     }
     margin: auto;
     color: #fff;
     .item {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1rem;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 2rem;
       @include --viewportSm {
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
       }
-      @include --viewportMd {
+      @include --viewportLg {
         grid-template-columns: repeat(3, 1fr);
-
         grid-gap: 3rem;
       }
       padding-bottom: 6rem;
 
       .item__container {
         overflow: hidden;
-
         width: 100%;
+        height: fit-content;
         padding: 1rem 1rem;
-        @include --viewportMd {
+        @include --viewportLg {
           padding: 2rem 2rem;
         }
         background-color: #19202e;
         border-radius: 0.5rem;
-        a {
+        .thumbnail {
           width: 3rem;
           img {
             width: 100%;
@@ -96,7 +96,7 @@
             transition: all 0.3s ease-in-out;
             &:hover {
               transform: scale(1.025);
-              cursor: pointer;
+              // cursor: pointer;
             }
           }
         }
@@ -106,7 +106,39 @@
           font-weight: bold;
         }
         p {
+          margin: 1.5rem 0;
           font-size: $font-xsmall;
+        }
+        .links {
+          display: flex;
+          flex-flow: row;
+          @include --viewportSm {
+            flex-flow: column;
+          }
+          @include --viewportMd {
+            flex-flow: row;
+          }
+          align-items: center;
+          justify-content: space-evenly;
+          a {
+            width: 15rem;
+            text-align: center;
+            margin: 0.5rem 0;
+            padding: 0.5rem 2rem;
+            background-color: #0c3564;
+            border: none;
+            border-radius: 0.5rem;
+
+            color: white;
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
+
+            // height: rem;
+            font-size: 1rem;
+            @include --viewportMd {
+              font-size: $font-xsmall;
+            }
+          }
         }
       }
     }

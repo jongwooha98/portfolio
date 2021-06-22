@@ -5,7 +5,9 @@ import items from './projectsData';
 // import Cards from '../Cards.jsx';
 import './_projects.scss';
 
-const allCategories = ['All', ...new Set(items.map(item => item.category))];
+const allCategories = ['All'].concat(
+  [...new Set(items.map(item => item.category))].reverse(),
+);
 
 // console.log(allCategories);
 
@@ -31,24 +33,95 @@ function Menu({ menuItem }) {
   return (
     <div className="item">
       {menuItem.map(item => {
+        // Neither href nor pdf exist
+        if (item.href === null && item.pdf === null) {
+          return (
+            <div className="item__container" key={item.id}>
+              <a
+                className="thumbnail"
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={item.image} alt="" />
+              </a>
+              <h2>{item.title}</h2>
+              <em>{item.misc}</em>
+              <p>{item.description}</p>
+            </div>
+          );
+        }
+        // Only href exists
+        if (item.href === null && item.pdf !== null) {
+          return (
+            <div className="item__container" key={item.id}>
+              <a
+                className="thumbnail"
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={item.image} alt="" />
+              </a>
+              <h2>{item.title}</h2>
+              <em>{item.misc}</em>
+              <p>{item.description}</p>
+              <div className="links">
+                <a href={item.pdf} target="_blank" rel="noreferrer">
+                  View PDF&nbsp; <i className="far fa-file-pdf" />
+                </a>
+              </div>
+            </div>
+          );
+        }
+        // Only pdf exists
+        if (item.pdf === null && item.href !== null) {
+          return (
+            <div className="item__container" key={item.id}>
+              <a
+                className="thumbnail"
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={item.image} alt="" />
+              </a>
+              <h2>{item.title}</h2>
+              <em>{item.misc}</em>
+              <p>{item.description}</p>
+              <div className="links">
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  Project Link&nbsp;
+                  <i className="fas fa-external-link-alt" />
+                </a>
+              </div>
+            </div>
+          );
+        }
+        // Both href and pdf exist
         return (
           <div className="item__container" key={item.id}>
-            <a href={item.href} target="_blank" rel="noreferrer">
+            <a
+              className="thumbnail"
+              href={item.href}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={item.image} alt="" />
             </a>
             <h2>{item.title}</h2>
+            <em>{item.misc}</em>
             <p>{item.description}</p>
-            <a href={item.pdf} target="_blank" rel="noreferrer">
-              <i className="far fa-file-pdf" />
-            </a>
-            <div>
-            {if (item.pdf === '') {
-               
-                <a href={item.pdf} target="_blank" rel="noreferrer">
-              <i className="far fa-file-pdf" />
-            </a>
-              
-            }}</div>
+            <div className="links">
+              <a href={item.pdf} target="_blank" rel="noreferrer">
+                View PDF
+                <i className="far fa-file-pdf" />
+              </a>
+              <a href={item.href} target="_blank" rel="noreferrer">
+                Project Link &nbsp;
+                <i className="fas fa-external-link-alt" />
+              </a>
+            </div>
           </div>
         );
       })}
