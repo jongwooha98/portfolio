@@ -1,15 +1,15 @@
 @import '/src/sass/variables';
 @import '/src/sass/_mixins.scss';
 /* Home Section */
-video {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-}
+// video {
+//   object-fit: cover;
+//   width: 100%;
+//   height: 100%;
+//   position: fixed;
+//   z-index: -1;
+// }
 
-.hero-container {
+.home-section {
   // background: url('') center center/cover no-repeat;
   height: 100vh;
   width: 100%;
@@ -17,57 +17,112 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   // box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  object-fit: contain;
-  > h1 {
+  // object-fit: contain;
+  h1 {
+    text-align: center;
     color: #fff;
-    font-size: 100px;
-    margin-top: -100ox;
+    font-size: $font-xlarge;
+    margin-top: -15rem;
   }
-  > p {
-    margin-top: 8px;
+  h2 {
+    margin-top: 1rem;
     color: #fff;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+    font-size: $font-medium;
+    font-weight: normal;
   }
 }
 
 .hero-btns {
-  margin-top: 32px;
+  display: flex;
+  flex-flow: column;
+  @include --viewportMd {
+    width: 55rem;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+  justify-content: center;
+  margin-top: 3rem;
+
   .btn {
-    margin: 6px;
+    width: 100%;
+    margin: 0.5rem auto;
   }
 }
 
 .fa-file-pdf {
-  margin-left: 4px;
+  margin-left: 0.5rem;
 }
 
-@media screen and (max-width: 960px) {
-  .hero-container {
-    > h1 {
-      font-size: 70px;
-      margin-top: -150px;
-    }
-  }
+// @media screen and (max-width: 960px) {
+//   .hero-container {
+//     > h1 {
+//       font-size: 70px;
+//       margin-top: -150px;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 768px) {
+//   .hero-container {
+//     > h1 {
+//       font-size: 50px;
+//       margin-top: -100px;
+//     }
+//     > p {
+//       font-size: 30px;
+//     }
+//   }
+//   .btn-mobile {
+//     display: block;
+//     text-decoration: none;
+//   }
+//   .btn {
+//     width: 100%;
+//   }
+// }
+
+// Buttons
+:root {
+  --primary: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  .hero-container {
-    > h1 {
-      font-size: 50px;
-      margin-top: -100px;
-    }
-    > p {
-      font-size: 30px;
-    }
-  }
-  .btn-mobile {
-    display: block;
-    text-decoration: none;
-  }
-  .btn {
-    width: 100%;
-  }
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: var(--primary);
+  color: #242424;
+  border: 1px solid var(--primary);
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 2rem;
+}
+
+.btn--large {
+  padding: 8px 20px;
+  font-size: 2rem;
+}
+
+.btn--medium:hover,
+.btn--large:hover {
+  background: #fff;
+  color: #242424;
+  transition: all 0.3s ease-out;
 }
