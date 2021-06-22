@@ -3,7 +3,8 @@
 
 @import 'components/footer/_footer.scss';
 @import 'components/nav/_navbar.scss';
-@import 'components/pages/about/_about.scss';
+@import 'components/pages/education/_education.scss';
+@import 'components/pages/experience/_experience.scss';
 @import 'components/pages/contact/_contact.scss';
 @import 'components/pages/home/_home.scss';
 @import 'components/pages/projects/_projects.scss';
@@ -16,88 +17,7 @@
 html,
 body {
   font-size: 10px;
-  // width: 100vw;
-  // height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #2d3c46;
-  // overflow-x: hidden;
 }
-
-// *,
-// *:before,
-// *:after {
-//   box-sizing: inherit;
-// }
-
-// body {
-//   box-sizing: border-box;
-// }
-
-// @media screen and (max-width: 780px) {
-//   .skills-section {
-//     padding-top: 5rem;
-//     h2 {
-//       font-size: $font-medium;
-//       padding: 2rem 0;
-//       span::after {
-//         content: '\a';
-//         white-space: pre;
-//       }
-//     }
-//   }
-//   .education-section {
-//     padding-top: 5rem;
-//     h2 {
-//       font-size: $font-medium;
-//       padding: 2rem 0;
-//     }
-//     .education {
-//       width: 92vw;
-//       padding: 3% 1%;
-//       .education__logo img {
-//         width: 5rem;
-//         height: 5rem;
-//         border: 50%;
-//         margin: 1rem 1.6rem 0 0;
-//       }
-//     }
-//   }
-//   .experience-section {
-//     padding-top: 5rem;
-//     h2 {
-//       font-size: $font-medium;
-//       padding: 2rem 0;
-//       span::after {
-//         content: '\a';
-//         white-space: pre;
-//       }
-//     }
-//     .experience {
-//       width: 92vw;
-//       padding: 3% 1%;
-
-//       .experience__logo img {
-//         margin: 1rem 1.6rem 0 0;
-//       }
-//     }
-//   }
-//   .contact-section {
-//     padding-top: 5rem;
-//     width: 95vw;
-//     flex-flow: column;
-//     .contact__social-media {
-//       display: flex;
-//       flex-flow: column;
-//       justify-content: center;
-//       margin-right: 0;
-//       ul.social-icons {
-//         display: flex;
-//         flex-flow: row;
-//         justify-content: space-evenly;
-//         width: 80%;
-//         margin: 2rem auto;
-//       }
-//     }
-//   }
-// }

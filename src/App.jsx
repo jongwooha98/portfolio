@@ -3,7 +3,8 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Footer from './components/footer/Footer';
 import Navbar from './components/nav/Navbar';
-import About from './components/pages/about/About';
+import Education from './components/pages/education/Education.jsx';
+import Experience from './components/pages/experience/Experience.jsx';
 import Contact from './components/pages/contact/Contact.jsx';
 import Home from './components/pages/home/Home';
 import Projects from './components/pages/projects/Projects.jsx';
@@ -17,7 +18,8 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/education" component={Education} />
+          <Route exact path="/experience" component={Experience} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contact" component={Contact} />
