@@ -70,7 +70,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 className="nav-link"
-                to="/about#education"
+                to="/education"
                 onClick={handleCollapse}
               >
                 Education
@@ -79,7 +79,7 @@ function Navbar() {
             <li className="nav-item">
               <Link
                 className="nav-link"
-                to="/about#experience"
+                to="/experience"
                 onClick={handleCollapse}
               >
                 Experience
