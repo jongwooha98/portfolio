@@ -1,0 +1,93 @@
+@import '/src/sass/variables';
+@import '/src/sass/_mixins.scss';
+
+/* Education Section */
+.education-section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: lighten($color-tan, 35%);
+  padding: 5rem 0;
+
+  font-size: $font-small;
+  h1 {
+    font-size: $font-xlarge;
+    color: #242424;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  h2 {
+    width: 90vw;
+
+    font-size: $font-medium;
+    @include --viewportMd {
+      font-size: $font-large;
+    }
+    color: lighten($color-blackboard, 10%);
+    text-align: center;
+    margin: 1% 0;
+  }
+
+  /* Education Component */
+  .education {
+    display: flex;
+    flex-flow: column;
+
+    width: 93vw;
+    @include --viewportMd {
+      width: 80vw;
+    }
+    @include --viewportLg {
+      width: 70vw;
+    }
+    margin: 1.2rem 0;
+    padding: 3rem 1rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
+
+    .education__info {
+      display: flex;
+      flex-flow: row;
+      .education__logo img {
+        width: 5rem;
+        height: 5rem;
+        border: 50%;
+        margin: 1rem 1.6rem 0 3rem;
+      }
+      .education__details {
+        .education__school {
+          a {
+            text-decoration: inherit;
+            color: inherit;
+            cursor: auto;
+          }
+          h3 {
+            font-size: $font-medium;
+          }
+        }
+        .education__degree {
+          h4 {
+            font-size: $font-small;
+          }
+        }
+        .education__duration {
+          font-size: $font-xsmall;
+        }
+        .education__location {
+          color: #4a4b46;
+          font-size: $font-xsmall;
+        }
+      }
+    }
+
+    .education__description {
+      width: 90%;
+      margin: 1rem auto;
+      font-size: $font-small;
+    }
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
