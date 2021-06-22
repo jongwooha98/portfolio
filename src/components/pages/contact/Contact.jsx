@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import codesandbox from '../../../assets/images/codesandbox.png';
+// import codesandbox from '../../../assets/images/codesandbox.png';
 import './_contact.scss';
 
 function Contact() {
@@ -180,7 +180,7 @@ function Contact() {
               <i className="fab fa-github" />
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               className="social-icon-link codepen"
               href="https://codepen.io/jongwooha98"
@@ -203,7 +203,7 @@ function Contact() {
                 <img src={codesandbox} alt="codesandbox" />
               </i>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

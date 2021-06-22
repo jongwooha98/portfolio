@@ -3,13 +3,18 @@
 /* Contact Section */
 .contact-section {
   display: flex;
-  flex-flow: row;
-
-  width: 80vw;
+  flex-flow: column;
+  width: 95vw;
+  @include --viewportMd {
+    width: 80vw;
+  }
+  margin: 5rem auto;
   padding: 5% 0;
+  background-color: #fff;
+  border-radius: 1rem;
   .contact__email {
-    background-color: #fff;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     .contact-form {
       padding: 2% 4% 4% 4%;
       .contact-image {
@@ -60,21 +65,16 @@
     }
   }
   .contact__social-media {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    margin-right: 2rem;
-
     ul.social-icons {
       display: flex;
-      flex-flow: column;
-      justify-content: space-evenly;
+      flex-flow: row;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
       border-radius: 10rem;
-      padding: 0 0.5rem;
-      height: 50%;
-
       li {
         list-style: none;
+        margin: 0 1rem;
         a.social-icon-link {
           display: flex;
           align-items: center;
@@ -87,11 +87,8 @@
           overflow: hidden;
           font-size: 3rem;
           z-index: 1;
-
           text-decoration: none !important;
-
-          position: relative;
-
+          // position: relative;
           transition: transform 0.4s linear 0s,
             border-top-left-radius 0.1s linear 0s,
             border-top-right-radius 0.1s linear 0.1s,
@@ -107,17 +104,17 @@
           &.github {
             background-color: #211f1f;
           }
-          &.codepen {
-            background-color: #0ebeff;
-          }
-          &.codesandbox {
-            background-color: #8739f9;
-            img {
-              max-width: 80%;
-              height: auto;
-              filter: invert(100%);
-            }
-          }
+          // &.codepen {
+          //   background-color: #0ebeff;
+          // }
+          // &.codesandbox {
+          //   background-color: #8739f9;
+          //   img {
+          //     max-width: 80%;
+          //     height: auto;
+          //     filter: invert(100%);
+          //   }
+          // }
 
           &:hover {
             transform: rotate(360deg);
