@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-// import Button from './Button';
-// import Menu from './Menu';
-import items from './projectsData';
-// import Cards from '../Cards.jsx';
 import './_projects.scss';
 
-const allCategories = ['All'].concat(
-  [...new Set(items.map(item => item.category))].reverse(),
-);
+import projectsData from './projectsData';
 
-// console.log(allCategories);
+const items = projectsData.reverse(); // reversed data, so latest item is shown first.
+
+const allCategories = ['All'].concat([
+  ...new Set(items.map(item => item.category)),
+]);
 
 function Button({ button, filter }) {
   return (
@@ -130,11 +128,9 @@ function Menu({ menuItem }) {
 }
 
 export default function Projects() {
-  const itemsReversed = items.reverse(); // reversed data, so latest item is shown first.
-  const [menuItem, setMenuItem] = useState(itemsReversed); // eslint-disable-line no-unused-vars
+  const [menuItem, setMenuItem] = useState(items); // eslint-disable-line no-unused-vars
   const [buttons, setButtons] = useState(allCategories); // eslint-disable-line no-unused-vars
-  console.log(items.reverse());
-  console.log(menuItem);
+
   const filter = button => {
     if (button === 'All') {
       setMenuItem(items);

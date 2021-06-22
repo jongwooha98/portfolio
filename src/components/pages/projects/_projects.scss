@@ -1,26 +1,22 @@
 @import '/src/sass/variables';
 @import '/src/sass/_mixins.scss';
 /* Projects section */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .projects-section {
-  padding-top: 5rem;
   display: flex;
   flex-flow: column;
+  padding: 5rem 0;
   color: #fff;
   background-color: #10121b;
   .title {
     text-align: center;
     h1 {
-      font-size: $font-large;
+      font-size: $font-xlarge;
       font-weight: bold;
     }
   }
   .buttons {
-    width: 70%;
+    width: 80%;
     margin: 3rem auto;
     text-align: center;
     display: flex;
@@ -37,7 +33,7 @@
       // font-family: inherit;
       // font-size: inherit;
       color: white;
-      transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
+      transition: all 0.2s cubic-bezier(1, -0.16, 0.6, 1.35);
 
       // height: rem;
       font-size: $font-xsmall;
@@ -118,13 +114,14 @@
           @include --viewportMd {
             flex-flow: row;
           }
+
           align-items: center;
           justify-content: space-evenly;
           a {
-            width: 15rem;
+            width: 13rem;
             text-align: center;
-            margin: 0.5rem 0;
-            padding: 0.5rem 2rem;
+            margin: 0.5rem 0.5rem;
+            padding: 0.5rem 0.5rem;
             background-color: #0c3564;
             border: none;
             border-radius: 0.5rem;
@@ -136,6 +133,7 @@
             // height: rem;
             font-size: 1rem;
             @include --viewportMd {
+              width: 15rem;
               font-size: $font-xsmall;
             }
           }
