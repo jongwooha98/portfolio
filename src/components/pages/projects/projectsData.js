@@ -6,6 +6,7 @@ import img4 from './assets/images/optical theremin.png';
 import img5 from './assets/images/adc circuit.png';
 import img6 from './assets/images/hydrophobic aircraft.png';
 import img7 from './assets/images/downhole hydraulic.png';
+import img8 from './assets/images/drum-machine.png';
 import img9 from './assets/images/random-quote-generator.png';
 import img12 from './assets/images/new heim.png';
 
@@ -94,7 +95,7 @@ export default [
   },
   {
     id: 8,
-    image: null,
+    image: img8,
     title: 'Drum Machine',
     category: 'Web Development',
     description: '',
