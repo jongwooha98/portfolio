@@ -6,6 +6,7 @@ import img4 from './assets/images/optical theremin.png';
 import img5 from './assets/images/adc circuit.png';
 import img6 from './assets/images/hydrophobic aircraft.png';
 import img7 from './assets/images/downhole hydraulic.png';
+import img9 from './assets/images/random-quote-generator.png';
 import img12 from './assets/images/new heim.png';
 
 // pdf
@@ -87,7 +88,7 @@ export default [
     description:
       'Our goal for this project was to build and design electro-hydraulic control systems. With this control system, a user can actuate a hydraulic tool and receive feedback from pressure sensors. The control system will contain a user interface, control electronics, a brushless DC motor, hydraulic pump and a hydraulic reservoir.',
     href:
-      'https://sites.psu.edu/lfshowcasesp20/2020/04/29/schlumberger-5-downhole-electro-hydraulic-control-system/',
+      'https://sites.psu.edu/lfshowcasesp20/2020/04/29/schlumberger-5-downhole-electro-hydraulic-control-system',
     pdf: pdf7,
     misc: 'sponsored by Schlumberger',
   },
@@ -97,16 +98,16 @@ export default [
     title: 'Drum Machine',
     category: 'Web Development',
     description: '',
-    href: 'https://jongwooha98.github.io/drum-machine/',
+    href: 'https://jongwooha98.github.io/drum-machine',
     pdf: null,
   },
   {
     id: 9,
-    image: null,
+    image: img9,
     title: 'Random Quote Generator',
     category: 'Web Development',
     description: '',
-    href: null,
+    href: 'https://jongwooha98.github.io/random-quote-generator',
     pdf: null,
   },
   {
@@ -115,7 +116,7 @@ export default [
     title: 'Tic Tac Toe',
     category: 'Web Development',
     description: '',
-    href: 'https://jongwooha98.github.io/tic-tac-toe/',
+    href: 'https://jongwooha98.github.io/tic-tac-toe',
     pdf: null,
   },
   {
