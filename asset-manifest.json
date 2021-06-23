@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.98590499.chunk.css",
-    "main.js": "/portfolio/static/js/main.557a43f4.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.557a43f4.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.f3e1e96f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f3e1e96f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
     "static/js/2.160bf79d.chunk.js": "/portfolio/static/js/2.160bf79d.chunk.js",
@@ -23,10 +23,12 @@
     "static/media/downhole hydraulic.38c6b1b4.png": "/portfolio/static/media/downhole hydraulic.38c6b1b4.png",
     "static/media/hydrophobic aircraft.fda166bd.png": "/portfolio/static/media/hydrophobic aircraft.fda166bd.png",
     "static/media/logo.0a970dc0.png": "/portfolio/static/media/logo.0a970dc0.png",
+    "static/media/new heim.2a31eda5.png": "/portfolio/static/media/new heim.2a31eda5.png",
     "static/media/optical theremin.23178b29.png": "/portfolio/static/media/optical theremin.23178b29.png",
     "static/media/private_tutor_logo.7c1df10e.png": "/portfolio/static/media/private_tutor_logo.7c1df10e.png",
     "static/media/psulogo.898c5db6.png": "/portfolio/static/media/psulogo.898c5db6.png",
     "static/media/psuuas.7b7415bd.png": "/portfolio/static/media/psuuas.7b7415bd.png",
+    "static/media/random-quote-generator.1c0dc2f3.png": "/portfolio/static/media/random-quote-generator.1c0dc2f3.png",
     "static/media/vr driving.b97bb1be.jpeg": "/portfolio/static/media/vr driving.b97bb1be.jpeg",
     "static/media/ychslogo.d76a1ca4.png": "/portfolio/static/media/ychslogo.d76a1ca4.png"
   },
@@ -34,6 +36,6 @@
     "static/js/runtime-main.76232b81.js",
     "static/js/2.160bf79d.chunk.js",
     "static/css/main.98590499.chunk.css",
-    "static/js/main.557a43f4.chunk.js"
+    "static/js/main.f3e1e96f.chunk.js"
   ]
 }
