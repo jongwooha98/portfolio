@@ -8,6 +8,7 @@ import img6 from './assets/images/hydrophobic aircraft.png';
 import img7 from './assets/images/downhole hydraulic.png';
 import img8 from './assets/images/drum-machine.png';
 import img9 from './assets/images/random-quote-generator.png';
+import img11 from './assets/images/pomodoro-timer.png';
 import img12 from './assets/images/new heim.png';
 
 // pdf
@@ -122,11 +123,11 @@ export default [
   },
   {
     id: 11,
-    image: null,
+    image: img11,
     title: 'Pomodoro Timer',
     category: 'Web Development',
     description: '',
-    href: null,
+    href: 'https://jongwooha98.github.io/pomodoro',
     pdf: null,
   },
   {
