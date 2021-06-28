@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.98590499.chunk.css",
-    "main.js": "/portfolio/static/js/main.5c5c951c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5c5c951c.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.e0df305b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e0df305b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
     "static/js/2.160bf79d.chunk.js": "/portfolio/static/js/2.160bf79d.chunk.js",
@@ -28,6 +28,7 @@
     "static/media/optical theremin.23178b29.png": "/portfolio/static/media/optical theremin.23178b29.png",
     "static/media/pomodoro-timer.f4640361.png": "/portfolio/static/media/pomodoro-timer.f4640361.png",
     "static/media/private_tutor_logo.7c1df10e.png": "/portfolio/static/media/private_tutor_logo.7c1df10e.png",
+    "static/media/product-landing-page.fbe02cdd.png": "/portfolio/static/media/product-landing-page.fbe02cdd.png",
     "static/media/psulogo.898c5db6.png": "/portfolio/static/media/psulogo.898c5db6.png",
     "static/media/psuuas.7b7415bd.png": "/portfolio/static/media/psuuas.7b7415bd.png",
     "static/media/random-quote-generator.1c0dc2f3.png": "/portfolio/static/media/random-quote-generator.1c0dc2f3.png",
@@ -38,6 +39,6 @@
     "static/js/runtime-main.76232b81.js",
     "static/js/2.160bf79d.chunk.js",
     "static/css/main.98590499.chunk.css",
-    "static/js/main.5c5c951c.chunk.js"
+    "static/js/main.e0df305b.chunk.js"
   ]
 }
