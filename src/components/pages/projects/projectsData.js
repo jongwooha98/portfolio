@@ -9,7 +9,8 @@ import img7 from './assets/images/downhole hydraulic.png';
 import img8 from './assets/images/drum-machine.png';
 import img9 from './assets/images/random-quote-generator.png';
 import img11 from './assets/images/pomodoro-timer.png';
-import img12 from './assets/images/new heim.png';
+import img12 from './assets/images/product-landing-page.png';
+import img13 from './assets/images/new heim.png';
 
 // pdf
 import pdf1 from './assets/pdf/Instruction Set-DMM.pdf';
@@ -133,6 +134,15 @@ export default [
   {
     id: 12,
     image: img12,
+    title: 'Product Landing Page',
+    category: 'Web Development',
+    description: '',
+    href: 'https://jongwooha98.github.io/product-landing-page',
+    pdf: null,
+  },
+  {
+    id: 13,
+    image: img13,
     title: 'New Heim Project',
     category: 'Web Development',
     description: '',
