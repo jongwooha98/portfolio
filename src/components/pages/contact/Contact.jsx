@@ -11,6 +11,8 @@ function Contact() {
           data-netlify="true"
           className="contact-form"
         >
+          <input type="hidden" name="form-name" value="contact" />
+
           <div className="contact-image">
             <i className="fas fa-rocket" />
           </div>
@@ -19,11 +21,7 @@ function Contact() {
             <br />
             Fill out the form below and let&apos;s make amazing things happen!
           </h4>
-          <p>
-            Contact form is currently not working. <br />
-            Please contact me through social media or send me an email at
-            jongwooha1@gmail.com
-          </p>
+
           <div className="form-group">
             <label htmlFor="name">
               Name
@@ -52,6 +50,7 @@ function Contact() {
               Subject
               <input
                 name="subject"
+                type="text"
                 id="subject"
                 className="form-control"
                 required
@@ -71,7 +70,7 @@ function Contact() {
           </div>
           <div className="form-group">
             <button type="submit" className="submit-button">
-              Submit
+              Send
             </button>
           </div>
         </form>
