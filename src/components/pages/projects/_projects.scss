@@ -23,19 +23,13 @@
     flex-flow: row wrap;
     justify-content: center;
     .button {
-      // padding: 1rem 2rem;
-      // width: fit-content;
       margin: 0.5rem 0;
       padding: 0.5rem 2rem;
       background-color: #0c3564;
       border: none;
       border-radius: 0.5rem;
-      // font-family: inherit;
-      // font-size: inherit;
       color: white;
       transition: all 0.2s cubic-bezier(1, -0.16, 0.6, 1.35);
-
-      // height: rem;
       font-size: $font-xsmall;
       @include --viewportMd {
         font-size: $font-small;
@@ -59,85 +53,112 @@
     }
     margin: auto;
     color: #fff;
-    .item {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-gap: 2rem;
-      @include --viewportSm {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
+  }
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+  @include --viewportSm {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  @include --viewportLg {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+  padding-bottom: 6rem;
+
+  .item__container {
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    height: 30rem;
+    padding: 1rem 1rem;
+    background-color: #19202e;
+    border-radius: 1rem;
+    .thumbnail {
+      border-radius: 1rem;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      overflow: hidden;
+      margin: auto;
+      width: 100%;
+      img {
+        max-width: 100%;
+        justify-content: flex-start;
+        max-height: 100%;
+        border-radius: 1rem;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          transform: scale(1.025);
+        }
       }
-      @include --viewportLg {
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 3rem;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: $font-medium;
+      font-weight: bold;
+    }
+  }
+}
+
+.modal-content {
+  color: $colorText;
+  overflow-y: auto;
+  .modal-header {
+    .modal-title {
+      font-size: $font-medium;
+    }
+  }
+  .modal-body {
+    display: flex;
+    flex-flow: column;
+    overflow: auto;
+    width: 100%;
+    padding: 1rem 1rem;
+    @include --viewportLg {
+      padding: 2rem 2rem;
+    }
+    border-radius: 0.5rem;
+    .thumbnail {
+      width: 100%;
+      img {
+        max-width: 100%;
+        border-radius: 1rem;
       }
-      padding-bottom: 6rem;
-
-      .item__container {
-        overflow: hidden;
-        width: 100%;
-        height: fit-content;
-        padding: 1rem 1rem;
-        @include --viewportLg {
-          padding: 2rem 2rem;
-        }
-        background-color: #19202e;
-        border-radius: 0.5rem;
-        .thumbnail {
-          width: 3rem;
-          img {
-            width: 100%;
-            border-radius: 0.5rem;
-
-            transition: all 0.3s ease-in-out;
-            &:hover {
-              transform: scale(1.025);
-              // cursor: pointer;
-            }
-          }
-        }
-        h2 {
-          margin-top: 2rem;
-          font-size: $font-small;
-          font-weight: bold;
-        }
-        p {
-          margin: 1.5rem 0;
-          font-size: $font-xsmall;
-        }
-        .links {
-          display: flex;
-          flex-flow: row;
-          @include --viewportSm {
-            flex-flow: column;
-          }
-          @include --viewportMd {
-            flex-flow: row;
-          }
-
-          align-items: center;
-          justify-content: space-evenly;
-          a {
-            width: 13rem;
-            text-align: center;
-            margin: 0.5rem 0.5rem;
-            padding: 0.5rem 0.5rem;
-            background-color: #0c3564;
-            border: none;
-            border-radius: 0.5rem;
-
-            color: white;
-            text-decoration: none;
-            transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
-
-            // height: rem;
-            font-size: 1rem;
-            @include --viewportMd {
-              width: 15rem;
-              font-size: $font-xsmall;
-            }
-          }
-        }
+    }
+    p {
+      margin-top: 1rem;
+      font-size: $font-small;
+    }
+  }
+  .modal-footer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    a {
+      width: 15rem;
+      text-align: center;
+      padding: 1rem;
+      background-color: #0c3564;
+      border: none;
+      border-radius: 1rem;
+      color: white;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(1, -0.16, 0.6, 1.35);
+      font-size: $font-xsmall;
+      @include --viewportMd {
+        width: 15rem;
+        font-size: $font-small;
+      }
+      &:hover {
+        background-color: #037fff;
+        cursor: pointer;
       }
     }
   }
