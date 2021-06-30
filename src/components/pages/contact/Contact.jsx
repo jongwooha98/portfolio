@@ -30,6 +30,7 @@ function Contact() {
                 type="text"
                 id="name"
                 className="form-control"
+                required
               />
             </label>
           </div>
