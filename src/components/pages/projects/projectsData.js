@@ -11,6 +11,8 @@ import img9 from './assets/images/random-quote-generator.png';
 import img11 from './assets/images/pomodoro-timer.png';
 import img12 from './assets/images/product-landing-page.png';
 import img13 from './assets/images/new heim.png';
+import img14 from './assets/images/simon-game.png';
+import img15 from './assets/images/memory-game.png';
 
 // pdf
 import pdf1 from './assets/pdf/Instruction Set-DMM.pdf';
@@ -147,6 +149,24 @@ export default [
     category: 'Web Development',
     description: '',
     href: 'https://jongwooha98.github.io/new-heim',
+    pdf: null,
+  },
+  {
+    id: 14,
+    image: img14,
+    title: 'Simon Game',
+    category: 'JS Minigame',
+    description: '',
+    href: 'https://jongwooha98.github.io/simon-game',
+    pdf: null,
+  },
+  {
+    id: 15,
+    image: img15,
+    title: 'Memory Game',
+    category: 'JS Minigame',
+    description: '',
+    href: 'https://jongwooha98.github.io/memory-game',
     pdf: null,
   },
 ];
