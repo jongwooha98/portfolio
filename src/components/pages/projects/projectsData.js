@@ -13,6 +13,7 @@ import img12 from './assets/images/product-landing-page.png';
 import img13 from './assets/images/new heim.png';
 import img14 from './assets/images/simon-game.png';
 import img15 from './assets/images/memory-game.png';
+import img18 from './assets/images/birthday-reminder.png';
 
 // pdf
 import pdf1 from './assets/pdf/Instruction Set-DMM.pdf';
@@ -167,6 +168,15 @@ export default [
     category: 'JS Minigame',
     description: '',
     href: 'https://jongwooha98.github.io/memory-game',
+    pdf: null,
+  },
+  {
+    id: 18,
+    image: img18,
+    title: 'Birthday Reminder',
+    category: 'Web Development',
+    description: '',
+    href: 'https://jongwooha98.github.io/birthday-reminder',
     pdf: null,
   },
 ];
