@@ -47,13 +47,6 @@ function Home() {
           >
             Contact
           </Button>
-          <Button
-            className="btns"
-            buttonStyle="btn--primary"
-            buttonSize="btn--large"
-          >
-            Download Resume <i className="far fa-file-pdf" />
-          </Button>
         </div>
       </div>
     </div>

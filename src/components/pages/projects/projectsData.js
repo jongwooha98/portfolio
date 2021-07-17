@@ -8,11 +8,14 @@ import img6 from './assets/images/hydrophobic aircraft.png';
 import img7 from './assets/images/downhole hydraulic.png';
 import img8 from './assets/images/drum-machine.png';
 import img9 from './assets/images/random-quote-generator.png';
-import img11 from './assets/images/pomodoro-timer.png';
+import img10 from './assets/images/tic-tac-toe.png';
+import img11 from './assets/images/pomodoro.png';
 import img12 from './assets/images/product-landing-page.png';
 import img13 from './assets/images/new heim.png';
 import img14 from './assets/images/simon-game.png';
 import img15 from './assets/images/memory-game.png';
+import img16 from './assets/images/whack-a-diglett.png';
+import img17 from './assets/images/elon-jump.png';
 import img18 from './assets/images/birthday-reminder.png';
 
 // pdf
@@ -118,9 +121,9 @@ export default [
   },
   {
     id: 10,
-    image: null,
+    image: img10,
     title: 'Tic Tac Toe',
-    category: 'Web Development',
+    category: 'Minigame',
     description: '',
     href: 'https://jongwooha98.github.io/tic-tac-toe',
     pdf: null,
@@ -156,7 +159,7 @@ export default [
     id: 14,
     image: img14,
     title: 'Simon Game',
-    category: 'JS Minigame',
+    category: 'Minigame',
     description: '',
     href: 'https://jongwooha98.github.io/simon-game',
     pdf: null,
@@ -165,9 +168,27 @@ export default [
     id: 15,
     image: img15,
     title: 'Memory Game',
-    category: 'JS Minigame',
+    category: 'Minigame',
     description: '',
     href: 'https://jongwooha98.github.io/memory-game',
+    pdf: null,
+  },
+  {
+    id: 16,
+    image: img16,
+    title: 'Whack-A-Diglett',
+    category: 'Minigame',
+    description: '',
+    href: 'https://jongwooha98.github.io/whack-a-diglett',
+    pdf: null,
+  },
+  {
+    id: 17,
+    image: img17,
+    title: 'Elon Jump',
+    category: 'Minigame',
+    description: '',
+    href: 'https://jongwooha98.github.io/elon-jump',
     pdf: null,
   },
   {

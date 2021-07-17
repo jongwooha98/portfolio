@@ -38,7 +38,7 @@
   display: flex;
   flex-flow: column;
   @include --viewportMd {
-    width: 55rem;
+    width: 35rem;
     flex-flow: row;
     justify-content: space-evenly;
   }
