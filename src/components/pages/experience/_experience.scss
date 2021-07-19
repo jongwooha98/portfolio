@@ -5,118 +5,120 @@
 .experience-section {
   display: flex;
   flex-flow: column;
+
   align-items: center;
   background-color: #fff;
   padding: 5rem 0;
   font-size: $font-small;
   h1 {
-    font-size: $font-xlarge;
     color: #242424;
     text-align: center;
   }
   h2 {
     width: 90vw;
-    font-size: $font-medium;
-    @include --viewportMd {
-      font-size: $font-large;
-    }
+    // font-size: $font-small;
+    // @include --viewportMd {
+    //   font-size: $font-large;
+    // }
     color: lighten($color-blackboard, 15%);
     text-align: center;
     margin: 1% 0;
   }
-  .buttons {
-    width: 80%;
-    margin-top: 3rem;
-    text-align: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    .button {
-      // padding: 1rem 2rem;
-      // width: fit-content;
-      margin: 0.5rem 0;
-      padding: 0.5rem 2rem;
-      background-color: #0c3564;
-      border: none;
-      border-radius: 0.5rem;
-      // font-family: inherit;
-      // font-size: inherit;
-      color: white;
-      transition: all 0.2s cubic-bezier(1, -0.16, 0.6, 1.35);
-
-      // height: rem;
-      font-size: $font-xsmall;
-      @include --viewportMd {
-        font-size: $font-small;
-      }
-      &:not(:last-child) {
-        margin-right: 1rem;
-      }
-      &:hover {
-        background-color: #037fff;
-        cursor: pointer;
-      }
-    }
-  }
-  /* Experience Component */
-  .experience {
+  .experience-container {
     display: flex;
     flex-flow: column;
-    width: 93vw;
-    @include --viewportMd {
-      width: 80vw;
-    }
-    @include --viewportLg {
-      width: 70vw;
-    }
-    margin: 1.2rem 0;
-    padding: 3rem 1rem;
-    background-color: #fff;
-    border-radius: 2rem;
-    box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
-    .experience__info {
+    align-items: center;
+    .buttons {
+      width: 80%;
+      margin-top: 3rem;
+      text-align: center;
       display: flex;
-      flex-flow: row;
-      .experience__logo img {
-        width: 5rem;
-        height: 5rem;
-        border: 50%;
-        margin: 1rem 1.6rem 0 3rem;
-      }
-      .experience__details {
-        .experience__title {
-          h3 {
-            font-size: $font-medium;
-          }
-        }
+      flex-flow: row wrap;
+      justify-content: center;
+      .button {
+        margin: 0.5rem 0;
+        padding: 0.5rem 2rem;
+        background-color: #0c3564;
+        border: none;
+        border-radius: 0.5rem;
 
-        .experience__organization {
-          a {
-            text-decoration: inherit;
-            color: inherit;
-            cursor: auto;
-          }
-          h4 {
-            font-size: $font-small;
-          }
+        color: white;
+        transition: all 0.2s cubic-bezier(1, -0.16, 0.6, 1.35);
+
+        // height: rem;
+        font-size: $font-xsmall;
+        @include --viewportMd {
+          font-size: $font-small;
         }
-        .experience__duration {
-          font-size: $font-xsmall;
+        &:not(:last-child) {
+          margin-right: 1rem;
         }
-        .experience__location {
-          color: #4a4b46;
-          font-size: $font-xsmall;
+        &:hover {
+          background-color: #037fff;
+          cursor: pointer;
         }
       }
     }
+    /* Experience Component */
+    .experience {
+      display: flex;
+      flex-flow: column;
+      width: 93vw;
+      @include --viewportMd {
+        width: 80vw;
+      }
+      @include --viewportLg {
+        width: 70vw;
+      }
+      margin: 1.2rem 0;
+      padding: 3rem 1rem;
+      background-color: #fff;
+      border-radius: 2rem;
+      box-shadow: 0 6px 20px rgba(15, 56, 133, 0.17);
+      .experience__info {
+        display: flex;
+        flex-flow: row;
+        .experience__logo img {
+          width: 5rem;
+          height: 5rem;
+          border: 50%;
+          margin: 1rem 1.6rem 0 3rem;
+        }
+        .experience__details {
+          .experience__title {
+            h3 {
+              font-size: $font-medium;
+            }
+          }
 
-    .experience__description {
-      width: 90%;
-      margin: 1rem auto;
-      font-size: $font-small;
-    }
-    &:hover {
-      transform: scale(1.01);
+          .experience__organization {
+            a {
+              text-decoration: inherit;
+              color: inherit;
+              cursor: auto;
+            }
+            // h4 {
+            //   font-size: $font-small;
+            // }
+          }
+          .experience__duration {
+            font-size: $font-xsmall;
+          }
+          .experience__location {
+            color: #4a4b46;
+            font-size: $font-xsmall;
+          }
+        }
+      }
+
+      .experience__description {
+        width: 90%;
+        margin: 1rem auto;
+        font-size: $font-small;
+      }
+      &:hover {
+        transform: scale(1.01);
+      }
     }
   }
 }

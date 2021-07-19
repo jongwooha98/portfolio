@@ -102,7 +102,7 @@ function Menu({ menuItem }) {
             <div className="thumbnail">
               <img src={item.image} alt="" />
             </div>
-            <h2>{item.title}</h2>
+            <h3>{item.title}</h3>
           </div>
         );
       })}
@@ -130,7 +130,6 @@ export default function Projects() {
         <div className="title">
           <h1>Projects</h1>
         </div>
-
         <div className="buttons">
           <Button button={buttons} filter={filter} />
         </div>

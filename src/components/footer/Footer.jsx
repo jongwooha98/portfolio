@@ -8,16 +8,16 @@ function Footer() {
       <div className="footer-link">
         <div className="footer-link__item">
           <h2>About</h2>
-          <p>
+          <span>
             Handcrafted with <br />
-            React and Bootstrap
-          </p>
+            React and Sass
+          </span>
         </div>
         <div className="footer-link__item">
           <h2>Explore</h2>
-          <Link to="/">Home</Link>
-          <Link to="/experience">Experience</Link>
+          <Link to="/#skills">Skills</Link>
           <Link to="/projects">Projects</Link>
+          <Link to="/#experience">Experience</Link>
           <Link to="/contact">Contact</Link>
         </div>
         <div className="footer-link__item">

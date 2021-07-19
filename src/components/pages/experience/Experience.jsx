@@ -84,15 +84,13 @@ function Experience() {
     <>
       <div id="experience" className="experience-section container-fluid">
         <h1>Experience</h1>
-        <h2>
-          <span>Learn from the past experience, </span> prepare for future
-          opportunities
-        </h2>
-        <div className="buttons">
-          <Button button={buttons} filter={filter} />
-        </div>
-        <div>
-          <Menu menuItem={menuItem} />
+        <div className="experience-container">
+          <div className="buttons">
+            <Button button={buttons} filter={filter} />
+          </div>
+          <div>
+            <Menu menuItem={menuItem} />
+          </div>
         </div>
       </div>
     </>

@@ -42,7 +42,6 @@ function EducationSection() {
     <>
       <div id="education" className="education-section container-fluid">
         <h1>Education</h1>
-        <h2>Invest in knowledge</h2>
         <Education
           logo={psulogo}
           school="Penn State University"

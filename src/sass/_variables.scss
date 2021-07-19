@@ -34,3 +34,22 @@ $color-grain: #d7cec7;
 $color-blackboard: #565656;
 $color-oxblood: #76323f;
 $color-tan: #c09f80;
+
+h1 {
+  font-size: $font-xlarge;
+}
+h2 {
+  font-size: $font-large;
+}
+h3 {
+  font-size: $font-medium;
+}
+h4 {
+  font-size: $font-small;
+}
+h5 {
+  font-size: $font-xsmall;
+}
+p {
+  font-size: 1rem;
+}

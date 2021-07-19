@@ -9,23 +9,10 @@
   background-color: lighten($color-tan, 35%);
   padding: 5rem 0;
 
-  font-size: $font-small;
   h1 {
-    font-size: $font-xlarge;
     color: #242424;
     text-align: center;
     margin: 3rem 0;
-  }
-  h2 {
-    width: 90vw;
-
-    font-size: $font-medium;
-    @include --viewportMd {
-      font-size: $font-large;
-    }
-    color: lighten($color-blackboard, 10%);
-    text-align: center;
-    margin: 1% 0;
   }
 
   /* Education Component */
